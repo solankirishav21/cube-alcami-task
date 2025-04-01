@@ -874,28 +874,82 @@
 
 /* Ingredients Section Styles */
 .ingredients {
-    padding: 80px 0;
-    background-color: #f7f6f5;
+    margin-top: 40px;
 }
 
 .ingredients .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1328px;
+    height: 774.48px;
+    margin-left: 64px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 64.72px;
+    gap: 48px;
 }
 
 .product-image {
-    flex: 1;
-    position: relative;
+    width: 730px;
+    height: 774.48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.product-image img {
-    max-width: 300px;
-    display: block;
-    margin: 0 auto;
+.ingredients-main-img {
+    width: 730px;
+    height: 774.48px;
+    /* border: 0.75px solid #D9D9D9; */
+    object-fit: contain;
+}
+
+.ingredients-info {
+    width: 550px;
+    height: 310.27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 27px;
+}
+
+.ingredients-info h3 {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 3.03px;
+    background: linear-gradient(92.57deg, #9E6718 -34.45%, #FFB545 127.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 0;
+}
+
+.ingredients-info h2 {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 100%;
+    color: #322D2D;
+    margin-bottom: 0;
+}
+
+.ingredients-info p {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #322D2D;
+    margin-bottom: 32px;
+}
+
+.ingredients-info p strong {
+    font-family: 'New Rail Alphabet';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #322D2D;
 }
 
 .ingredient-icons {
@@ -966,65 +1020,65 @@
     bottom: 5%;
     left: 40%;
 }
-.ingredients-info {
-    flex: 1;
-    padding-left: 80px;
-}
-
-.ingredients-info h3 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #caa648;
-    margin-bottom: 15px;
-}
-
-.ingredients-info h2 {
-    font-size: 40px;
-    font-weight: 500;
-    color: #322d2d;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.ingredients-info p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
 
 .view-ingredients-btn {
+    width: 307.241455078125px;
+    border-radius: 505.64px;
+    border: none;
+    border-bottom-width: 1.01px;
+    padding: 12.14px 24.27px;
+    background: linear-gradient(92.57deg, #CAA648 -34.45%, #CAA648 -12.71%, #D5B147 4.32%, #E4C267 36.63%, #E2C065 85.1%, #DBB95E 102.87%, #D0AE52 114.18%, #C09F41 119.07%, #BB9A3C 127.1%);
+    font-family: 'New Rail Alphabet';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 15px 30px;
-    background: linear-gradient(273.63deg, #caa648 0.61%, #caa648 10.09%, #d5b147 25.19%, #e4c267 46.69%, #e2c065 78.94%, #dbb95e 90.76%, #d0ae52 98.29%, #c09f41 104.74%, #bb9a3c 106.89%);
-    border: none;
-    border-radius: 505.64px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 300;
-    color: #000;
+    justify-content: space-between;
+    gap: 8px;
+    transition: all 0.3s ease;
+    color: #322D2D;
+}
+
+.view-ingredients-btn-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-ingredients-btn img {
+    width: 12px;
+    height: 12px;
     transition: transform 0.3s ease;
 }
 
 .view-ingredients-btn:hover {
-    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.view-ingredients-btn:hover img {
+    transform: translateX(4px);
 }
 
 /* Guarantees Section Styles */
 .guarantees {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #F9F9F9;
+    width: 1328px;
+    height: 114.27555084228516px;
+    margin-left: 64px;
+    border-radius: 14.16px;
 }
 
 .guarantees .container {
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 64.72px;
+    padding: 20px 40px;
 }
 
 .guarantees h3 {
@@ -1054,8 +1108,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #222;
-    border-radius: 50%;
     padding: 10px;
 }
 
@@ -1080,38 +1132,84 @@
 
 /* Responsive Styles for Guarantees */
 @media screen and (max-width: 1024px) {
+    .guarantees {
+        width: 100%;
+        /* margin: auto; */
+        justify-content: center;
+    }
+    
     .guarantees .container {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 30px 20px;
     }
-
-    .guarantees h3 {
-        margin-bottom: 30px;
-        margin-right: 0;
-    }
-
+    
     .guarantee-items {
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 20px;
     }
     
     .guarantee-item {
-        width: 45%;
+        flex: 0 0 calc(50% - 10px);
     }
 }
 
 @media screen and (max-width: 768px) {
+    .guarantees {
+        padding: 30px 15px;
+        height: auto;
+    }
+    
     .guarantees .container {
-        padding: 0 30px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: auto;
+    }
+    
+    .guarantees h3 {
+        /* margin-right: 0; */
+        margin-bottom: 20px;
     }
     
     .guarantee-items {
-        flex-direction: column;
-        gap: 25px;
+        gap: 15px;
     }
     
     .guarantee-item {
-        width: 100%;
+        flex: 0 0 100%;
+    }
+    
+    .guarantee-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .guarantees {
+        padding: 20px 10px;
+    }
+    
+    .guarantees .container {
+        padding: 15px;
+    }
+    
+    .guarantees h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .guarantee-items {
+        gap: 12px;
+    }
+    
+    .guarantee-item {
+        gap: 10px;
+    }
+    
+    .guarantee-icon {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
     }
 }
 
@@ -1160,41 +1258,62 @@
 /* Responsive styles for As Seen In section */
 @media screen and (max-width: 1024px) {
     .as-seen-container {
+        flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+        padding: 0 30px;
     }
     
     .as-seen-title {
-        margin-right: 0;
-        margin-bottom: 20px;
         width: 100%;
         text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .logo-item {
+        flex: 0 0 calc(20% - 30px);
+        margin: 0;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .as-seen-container {
-        gap: 25px;
-    }
-    
-    .logo-item {
-        margin: 0 10px;
-    }
-}
-
-@media screen and (max-width: 480px) {
     .as-seen-in {
         padding: 30px 0;
     }
     
     .as-seen-container {
-        gap: 20px;
+        gap: 25px;
+        padding: 0 20px;
     }
     
     .logo-item {
-        margin: 10px;
-        flex: 0 0 40%;
-        text-align: center;
+        flex: 0 0 calc(33.33% - 20px);
+    }
+    
+    .as-seen-title {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .as-seen-in {
+        padding: 20px 0;
+    }
+    
+    .as-seen-container {
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .logo-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+    
+    .as-seen-title {
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1708,115 +1827,114 @@
 
 /* Himalayan Shilajit Section Styles */
 .shilajit-section {
-    padding: 80px 0;
-    background-color: #fff;
-    border-top: 1px solid #e5e5e5;
+    padding: 120px 0;
+    background: #FAFAFA;
 }
 
 .shilajit-container {
-    max-width: 1200px;
+    max-width: 1328px;
     margin: 0 auto;
-    padding: 0 64.72px;
+    padding: 0 24px;
 }
 
 .shilajit-header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .shilajit-header h2 {
-    font-size: 42px;
-    font-weight: 500;
-    color: #322d2d;
-    margin-bottom: 8px;
+    font-family: 'New Rail Alphabet';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 16px;
+    color: #322D2D;
 }
 
 .subtitle {
+    font-family: 'New Rail Alphabet';
     font-size: 14px;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 3.03px;
+    color: #322D2D;
 }
 
-/* Shilajit Content Styles */
 .shilajit-content {
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
-    margin-bottom: 50px;
+    gap: 48px;
+    margin-bottom: 48px;
 }
 
 .shilajit-image {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 730px;
+    height: 774.48px;
 }
 
 .shilajit-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 80%;
+    height: 80%;
+    /* object-fit: contain; */
 }
 
 .shilajit-benefits {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 48px;
 }
 
 .benefit-wrapper {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .benefit-card {
-    flex: 1;
+    background: #FFFFFF;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    gap: 16px;
+}
+
+.benefit-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .benefit-icon {
-    width: 60px;
-    height: 60px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.energy-icon img {
-    filter: hue-rotate(25deg) brightness(1.2);
-}
-
-.bone-icon img {
-    filter: hue-rotate(45deg) brightness(1.1);
-}
-
-.brain-icon img {
-    filter: hue-rotate(0deg) brightness(1.1);
-}
-
-.immune-icon img {
-    filter: hue-rotate(15deg) brightness(1.1);
+.benefit-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .benefit-text h3 {
+    font-family: 'New Rail Alphabet';
     font-size: 18px;
-    font-weight: 500;
-    color: #322d2d;
-    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #322D2D;
 }
 
-.benefit-text p {
+.benefit-description {
+    font-family: 'New Rail Alphabet';
     font-size: 14px;
-    color: #666;
-    line-height: 1.6;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666666;
+    margin: 0;
 }
 
 .try-button-container {
@@ -1824,27 +1942,126 @@
 }
 
 .try-shilajit-btn {
+    background: #E2C065;
+    color: #0c0c0cFF;
+    font-family: 'New Rail Alphabet';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 505px;
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 15px;
-    padding: 16px 45px;
-    background-color: #d4b258;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    gap: 8px;
+    transition: all 0.3s ease;
 }
 
 .try-shilajit-btn:hover {
-    background-color: #c8a64a;
-    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
-.btn-arrow {
-    font-size: 18px;
+@media screen and (max-width: 1200px) {
+    .shilajit-container {
+        padding: 0 32px;
+    }
+
+    .shilajit-content {
+        gap: 32px;
+    }
+
+    .shilajit-image {
+        flex: 0 0 50%;
+        height: auto;
+        aspect-ratio: 730/774;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .shilajit-content {
+        flex-direction: column;
+    }
+
+    .shilajit-image {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .shilajit-benefits {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .benefit-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .benefit-card {
+        flex: 0 0 calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shilajit-section {
+        padding: 60px 0;
+    }
+
+    .shilajit-container {
+        padding: 0 24px;
+    }
+
+    .shilajit-header h2 {
+        font-size: 36px;
+    }
+
+    .benefit-wrapper {
+        flex-direction: column;
+    }
+
+    .benefit-card {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shilajit-section {
+        padding: 40px 0;
+    }
+
+    .shilajit-container {
+        padding: 0 16px;
+    }
+
+    .shilajit-header h2 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .benefit-card {
+        padding: 24px;
+    }
+
+    .benefit-text h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .benefit-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .try-shilajit-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Certifications Section Styles */
@@ -1859,14 +2076,15 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 64.72px;
+    gap: 100px;
 }
 
 .certification-item {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
@@ -1874,8 +2092,6 @@
 .certification-icon {
     width: 65px;
     height: 65px;
-    border-radius: 50%;
-    border: 1px solid #e0e0e0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1885,13 +2101,83 @@
 .certification-icon img {
     max-width: 45px;
     max-height: 45px;
+    object-fit: contain;
 }
 
 .certification-text {
-    font-size: 14px;
-    color: #333;
+    font-family: New Rail Alphabet;
+    font-weight: 300;
+    font-size: 20px;
+    color: #322D2D;
+    line-height: 24.27px;
+    letter-spacing: 0px;
     text-align: center;
-    font-weight: 400;
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+    .certifications-section {
+        padding: 32px 0;
+    }
+    
+    .certifications-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        padding: 0 40px;
+    }
+    
+    .certification-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .certification-icon {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .certification-icon img {
+        max-width: 38px;
+        max-height: 38px;
+    }
+    
+    .certification-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+    .certifications-section {
+        padding: 24px 0;
+    }
+    
+    .certifications-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0 20px;
+    }
+    
+    .certification-item {
+        gap: 8px;
+    }
+    
+    .certification-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .certification-icon img {
+        max-width: 32px;
+        max-height: 32px;
+    }
+    
+    .certification-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 /* Responsive Styles for Certifications */
@@ -2005,153 +2291,181 @@
 
 /* Subscription Banner Section Styles */
 .subscription-banner {
-    padding: 0;
-    margin: 60px 0;
+    background: #FAFAFA;
+    padding: 120px 24px;
+    width: 100%;
 }
 
 .subscription-banner-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1327.68px;
+    height: 489.85px;
+    margin: -0.16px auto 0;
+    padding: 48px;
+    border-radius: 15.71px;
+    background: url('../assets/subscription-banner.png') no-repeat center;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f7f6f1;
-    border-radius: 20px;
-    overflow: hidden;
+    gap: 48px;
 }
 
 .subscription-banner-content {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 60px;
+    max-width: 600px;
+    color: #000000;
 }
 
 .subscription-tag {
-    font-size: 14px;
-    font-weight: 600;
-    color: #caa648;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-family: Oxanium;
+    font-weight: 400;
+    font-size: 12.43px;
+    line-height: 100%;
+    letter-spacing: 3.14px;
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 16px;
 }
 
 .subscription-title {
-    font-size: 42px;
-    font-weight: 500;
-    color: #322d2d;
-    margin-bottom: 30px;
-    line-height: 1.2;
+    font-family: New Rail Alphabet;
+    font-weight: 300;
+    font-size: 41.43px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-bottom: 16px;
 }
 
 .subscription-title span {
-    font-weight: 600;
+    font-family: New Rail Alphabet;
+    font-weight: 700;
+    font-size: 41.43px;
+    line-height: 100%;
+    letter-spacing: 0px;
 }
 
 .subscription-benefits {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .benefit-pill {
-    padding: 12px 20px;
-    background-color: #e9e9e6;
-    border-radius: 30px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
     font-size: 14px;
     font-weight: 500;
-    color: #4a4a4a;
-    text-transform: uppercase;
+    color: #000000;
 }
 
 .subscribe-now-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    padding: 16px 45px;
-    background: linear-gradient(273.63deg, #caa648 0.61%, #caa648 10.09%, #d5b147 25.19%, #e4c267 46.69%, #e2c065 78.94%, #dbb95e 90.76%, #d0ae52 98.29%, #c09f41 104.74%, #bb9a3c 106.89%);
-    color: #333;
+    padding: 16px 32px;
+    background: #D4AF37;
+    border-radius: 100px;
+    border: none;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
-    border: none;
-    border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
 }
 
 .subscribe-now-btn:hover {
-    transform: translateY(-2px);
+    background: #C19B20;
 }
 
-.subscription-banner-image {
-    flex: 0 0 50%;
-    max-width: 50%;
-    height: 100%;
+@media screen and (max-width: 1366px) {
+    .subscription-banner-container {
+        max-width: 90%;
+        height: auto;
+        min-height: 400px;
+    }
 }
 
-.subscription-banner-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Responsive Styles for Subscription Banner */
 @media screen and (max-width: 1024px) {
     .subscription-banner {
-        margin: 40px 20px;
+        padding: 80px 24px;
     }
-    
+
     .subscription-banner-container {
-        flex-direction: column;
-    }
-    
-    .subscription-banner-content, 
-    .subscription-banner-image {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-    
-    .subscription-banner-content {
         padding: 40px;
+    }
+
+    .subscription-title {
+        font-size: 32px;
+    }
+
+    .subscription-title span {
+        font-size: 32px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .subscription-banner {
-        margin: 30px 15px;
+        padding: 60px 24px;
     }
-    
+
+    .subscription-banner-container {
+        padding: 32px;
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
     .subscription-banner-content {
-        padding: 30px;
+        max-width: 100%;
     }
-    
+
     .subscription-title {
-        font-size: 36px;
+        font-size: 28px;
+    }
+
+    .subscription-title span {
+        font-size: 28px;
+    }
+
+    .subscription-benefits {
+        justify-content: center;
+    }
+
+    .subscribe-now-btn {
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 480px) {
     .subscription-banner {
-        margin: 20px 10px;
+        padding: 40px 16px;
     }
-    
-    .subscription-banner-content {
-        padding: 25px 20px;
+
+    .subscription-banner-container {
+        padding: 24px;
     }
-    
+
     .subscription-title {
-        font-size: 28px;
+        font-size: 24px;
     }
-    
+
+    .subscription-title span {
+        font-size: 24px;
+    }
+
     .benefit-pill {
-        padding: 10px 16px;
+        padding: 6px 12px;
         font-size: 12px;
     }
-    
+
     .subscribe-now-btn {
         width: 100%;
         justify-content: center;
-        padding: 14px 20px;
+        padding: 14px 24px;
+        font-size: 14px;
     }
 }
 
@@ -3801,4 +4115,252 @@
         font-size: 14px;
     }
 }
+
+/* Tablet Styles (max-width: 991px) */
+@media screen and (max-width: 991px) {
+    .ingredients .container {
+        width: 100%;
+        max-width: 912px;
+        margin: 0 auto;
+        padding: 0 24px;
+        height: auto;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        max-width: 730px;
+    }
+
+    .ingredients-main-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 730/774.48;
+    }
+
+    .ingredients-info {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ingredients-info h3 {
+        font-size: 22px;
+    }
+
+    .ingredients-info h2 {
+        font-size: 32px;
+    }
+
+    .ingredients-info p {
+        font-size: 19px;
+        line-height: 28px;
+    }
+}
+
+/* Medium Screen Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .ingredients {
+        margin-top: 720px;
+    }
+
+    .ingredients .container {
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .ingredients-info h3 {
+        font-size: 20px;
+    }
+
+    .ingredients-info h2 {
+        font-size: 28px;
+    }
+
+    .ingredients-info p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+
+    .view-ingredients-btn {
+        width: 100%;
+        max-width: 307px;
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .ingredients {
+        margin-top: 640px;
+    }
+
+    .ingredients .container {
+        padding: 0 16px;
+        gap: 20px;
+    }
+
+    .ingredients-info h3 {
+        font-size: 18px;
+        letter-spacing: 2.5px;
+    }
+
+    .ingredients-info h2 {
+        font-size: 24px;
+    }
+
+    .ingredients-info p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .view-ingredients-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* Guarantees Section Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .guarantees .container {
+        padding: 60px 24px;
+        max-width: 912px;
+    }
+
+    .guarantee-items {
+        gap: 32px;
+    }
+
+    .guarantee-item {
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .guarantees .container {
+        padding: 48px 20px;
+    }
+
+    .guarantees h3 {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .guarantee-items {
+        gap: 24px;
+    }
+
+    .guarantee-item {
+        flex: 0 0 100%;
+        padding: 20px;
+    }
+
+    .guarantee-text h4 {
+        font-size: 16px;
+    }
+
+    .guarantee-text p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .guarantees .container {
+        padding: 40px 16px;
+    }
+
+    .guarantees h3 {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .guarantee-items {
+        gap: 16px;
+    }
+
+    .guarantee-item {
+        padding: 16px;
+    }
+
+    .guarantee-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* As Seen In Section Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .as-seen-in {
+        padding: 60px 24px;
+    }
+
+    .as-seen-container {
+        max-width: 912px;
+        gap: 40px;
+    }
+
+    .as-seen-title {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .logo-item {
+        flex: 0 0 calc(20% - 32px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .as-seen-in {
+        padding: 48px 20px;
+    }
+
+    .as-seen-container {
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .as-seen-title {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .logo-item {
+        flex: 0 0 calc(33.33% - 24px);
+    }
+
+    .logo-item img {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .as-seen-in {
+        padding: 40px 16px;
+    }
+
+    .as-seen-container {
+        gap: 24px;
+    }
+
+    .as-seen-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .logo-item {
+        flex: 0 0 calc(50% - 12px);
+    }
+
+    .logo-item img {
+        max-width: 100px;
+    }
+}
+
 
