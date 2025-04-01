@@ -20,15 +20,24 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
-                    <img src="https://via.placeholder.com/175x30?text=ALCAMI" alt="Alcami Logo">
+                    <img src="./assets/logo-navbar.png" alt="Alcami Logo">
                 </div>
 
-                <!-- Mobile Menu Toggle -->
-                <div class="hamburger-menu">
+                <button class="hamburger-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
+
+                <!-- Search Form (hidden by default) -->
+                <form class="inline-search-form">
+                    <input type="text" placeholder="Search For Products..." class="inline-search-input">
+                    <button type="button" class="inline-search-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
 
                 <div class="nav-links">
                     <a href="#" class="nav-link">Home</a>
@@ -100,13 +109,13 @@
         <div class="container">
             <div class="hero-content">
                 <div class="rating">
-                    <div class="stars">
-                        <img src="https://via.placeholder.com/20x20?text=★" alt="Star">
+                    <div class="rating-pill">
+                        <img src="./assets/star-hero.png" alt="Star Rating" class="star-hero">
+                        <p>4.8 star rating</p>
                     </div>
-                    <p>4.8 star rating</p>
-                    <p class="award">· awarded the top adaptogen blend in the world</p>
+                    <p class="award">awarded the top adaptogen blend in the world</p>
                 </div>
-                <h1>Achieve your highest self.</h1>
+                <p class="hero-title">Achieve your highest self.</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <h2>10x</h2>
@@ -123,11 +132,15 @@
                 </div>
                 <button class="shop-now-btn">
                     Shop Now
-                    <img src="https://via.placeholder.com/12x12?text=→" alt="Arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 5L21 12M21 12L14 19M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </button>
             </div>
             <div class="hero-image">
-                <img src="https://via.placeholder.com/400x300?text=Alcami+Product+Bottles" alt="Alcami Product Bottles">
+                <div class="product-images">
+                    <img src="./assets/hero.png" alt="Alcami Hero Product" class="product-img">
+                </div>
             </div>
         </div>
     </section>

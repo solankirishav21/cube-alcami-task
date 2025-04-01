@@ -2,56 +2,68 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Search functionality
   const searchIcon = document.querySelector(".search-icon");
-  const searchBox = document.querySelector(".search-box");
+  const searchForm = document.querySelector(".inline-search-form");
+  const navLinks = document.querySelector(".nav-links");
+  const searchClose = document.querySelector(".inline-search-close");
+  const searchInput = document.querySelector(".inline-search-input");
 
-  // Toggle search box when search icon is clicked
-  searchIcon.addEventListener("click", function () {
-    searchBox.classList.toggle("active");
+  searchIcon.addEventListener("click", () => {
+    searchForm.classList.add("active");
+    navLinks.classList.add("hide");
+    searchInput.focus();
   });
 
-  // Close search box when clicking outside
-  document.addEventListener("click", function (event) {
-    const isClickInsideSearch =
-      searchIcon.contains(event.target) || searchBox.contains(event.target);
-    if (!isClickInsideSearch && searchBox.classList.contains("active")) {
-      searchBox.classList.remove("active");
+  searchClose.addEventListener("click", () => {
+    searchForm.classList.remove("active");
+    navLinks.classList.remove("hide");
+    searchInput.value = "";
+  });
+
+  // Close search on escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (searchForm.classList.contains("active")) {
+        searchForm.classList.remove("active");
+        navLinks.classList.remove("hide");
+        searchInput.value = "";
+      }
+      if (mobileMenu.classList.contains("active")) {
+        hamburgerMenu.classList.remove("active");
+        mobileMenu.classList.remove("active");
+        body.classList.remove("menu-open");
+      }
     }
   });
 
-  // Mobile menu functionality
+  // Hamburger menu functionality
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const mobileMenu = document.querySelector(".mobile-menu");
+  const body = document.body;
 
-  // Toggle mobile menu when hamburger is clicked
-  hamburgerMenu.addEventListener("click", function () {
+  hamburgerMenu.addEventListener("click", () => {
     hamburgerMenu.classList.toggle("active");
     mobileMenu.classList.toggle("active");
-    // Prevent body scrolling when menu is open
-    document.body.classList.toggle("menu-open");
+    body.classList.toggle("menu-open");
   });
 
-  // Close mobile menu when a link is clicked
+  // Close mobile menu when clicking a link
   const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
   mobileNavLinks.forEach((link) => {
-    link.addEventListener("click", function () {
+    link.addEventListener("click", () => {
       hamburgerMenu.classList.remove("active");
       mobileMenu.classList.remove("active");
-      document.body.classList.remove("menu-open");
+      body.classList.remove("menu-open");
     });
   });
 
-  // Responsive behavior
-  function handleResize() {
-    if (window.innerWidth > 991 && mobileMenu.classList.contains("active")) {
-      // Reset mobile menu state when viewport becomes desktop size
+  // Close mobile menu on window resize (if screen becomes larger)
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 991) {
       hamburgerMenu.classList.remove("active");
       mobileMenu.classList.remove("active");
-      document.body.classList.remove("menu-open");
+      body.classList.remove("menu-open");
     }
-  }
-
-  // Listen for window resize
-  window.addEventListener("resize", handleResize);
+  });
 
   // Stats Counter Animation
   const statsBanner = document.querySelector(".stats-banner");
