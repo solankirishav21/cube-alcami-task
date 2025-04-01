@@ -2624,97 +2624,69 @@
 /* Responsive Styles for Morning Ritual Section */
 @media screen and (max-width: 1024px) {
     .morning-ritual-section {
-        padding: 70px 0;
+        padding: 60px 24px;
     }
     
     .morning-ritual-container {
         flex-direction: column;
-        padding: 0 40px;
+        gap: 40px;
     }
     
     .morning-ritual-content,
     .morning-ritual-video {
-        max-width: 100%;
-        flex: 0 0 100%;
+        width: 100%;
     }
     
     .morning-ritual-content {
-        margin-bottom: 50px;
+        padding-right: 0;
     }
     
     .ritual-steps {
-        max-width: 600px;
+        gap: 24px;
     }
     
     .morning-ritual-title {
-        font-size: 42px;
+        font-size: 36px;
+        line-height: 1.2;
     }
 }
 
 @media screen and (max-width: 768px) {
     .morning-ritual-section {
-        padding: 50px 0;
+        padding: 48px 20px;
     }
     
     .morning-ritual-container {
-        padding: 0 30px;
+        gap: 32px;
     }
     
     .morning-ritual-title {
-        font-size: 36px;
+        font-size: 32px;
+        br {
+            display: none;
+        }
     }
     
     .ritual-step {
-        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
     
     .step-number {
-        font-size: 60px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
     
     .step-title {
         font-size: 20px;
-    }
-    
-    .see-how-btn {
-        padding: 14px 35px;
-    }
-    
-    .play-button {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .morning-ritual-section {
-        padding: 40px 0;
-    }
-    
-    .morning-ritual-title {
-        font-size: 30px;
-    }
-    
-    .morning-ritual-subtitle {
-        font-size: 14px;
-    }
-    
-    .step-number {
-        font-size: 48px;
-    }
-    
-    .step-title {
-        font-size: 18px;
-    }
-    
-    .step-description {
-        font-size: 14px;
+        margin-bottom: 8px;
     }
     
     .see-how-btn {
         width: 100%;
         justify-content: center;
-        padding: 14px 20px;
     }
     
     .play-button {
@@ -2723,53 +2695,168 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .morning-ritual-section {
+        padding: 40px 16px;
+    }
+    
+    .morning-ritual-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    
+    .morning-ritual-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+    
+    .step-number {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+    
+    .step-title {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    
+    .step-description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .see-how-btn {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+    
+    .play-button {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .play-icon {
+        font-size: 20px;
+    }
+}
+
 /* Statistics Banner Section Styles */
 .stats-banner {
     position: relative;
-    padding: 50px 0;
-    /* margin-top: 80px; */
-    background: url('https://via.placeholder.com/1920x600?text=Mushroom+Background') center/cover no-repeat;
-    color: #fff;
+    width: 100%;
+    height: 100;
+    background: url('../assets/mushroom.jpeg') no-repeat center center;
+    background-size: cover;
     overflow: hidden;
+    padding: 120px 20px;
 }
 
 .stats-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
 .stats-container {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 64.72px;
     z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
 
 .stat-item {
-    flex: 0 0 22%;
-    max-width: 22%;
     text-align: left;
+    padding-right: 40px;
 }
 
 .stat-percentage {
-    font-size: 72px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    color: #D4AF37;
+    margin-bottom: 16px;
 }
 
 .stat-description {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    font-weight: 300;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+    .stats-banner {
+        padding: 100px 20px;
+    }
+    
+    .stats-container {
+        gap: 30px;
+    }
+    
+    .stat-percentage {
+        font-size: 48px;
+    }
+    
+    .stat-description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .stats-banner {
+        padding: 80px 20px;
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+    
+    .stat-item {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .stats-banner {
+        padding: 60px 20px;
+    }
+    
+    .stat-percentage {
+        font-size: 42px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .stats-banner {
+        padding: 50px 20px;
+    }
+    
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .stat-item {
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .stat-percentage {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    
+    .stat-description {
+        font-size: 15px;
+    }
 }
 
 /* Comparison Table Section Styles */
@@ -3633,26 +3720,37 @@
 
 /* Newsletter Section Styles */
 .newsletter-section {
-    margin: 80px 0;
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    /* background: #000; */
     overflow: hidden;
 }
 
 .newsletter-container {
+    position: relative;
     max-width: 1400px;
     margin: 0 auto;
-    position: relative;
-    background-color: #9a9696;
     border-radius: 20px;
     overflow: hidden;
+    min-height: 400px;
+    background-image: url('../assets/coffer.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.newsletter-overlay {
+.newsletter-container::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.15);
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -3661,6 +3759,10 @@
     padding: 80px 20px;
     text-align: center;
     z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
 }
 
 .newsletter-title {
@@ -3734,22 +3836,6 @@
     transform: translateX(5px);
 }
 
-.newsletter-image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.newsletter-background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-}
-
 /* Responsive Styles for Newsletter Section */
 @media screen and (max-width: 1024px) {
     .newsletter-section {
@@ -3757,7 +3843,7 @@
     }
     
     .newsletter-content {
-        padding: 60px 40px;
+        padding: 80px 40px;
     }
     
     .newsletter-title {
@@ -3771,7 +3857,7 @@
     }
     
     .newsletter-content {
-        padding: 50px 30px;
+        padding: 60px 30px;
     }
     
     .newsletter-title {
@@ -3794,7 +3880,7 @@
     }
     
     .newsletter-content {
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
     
     .newsletter-title {
@@ -3827,7 +3913,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 100;
     margin: 0 auto;
     gap: 60px;
 }
@@ -3859,11 +3945,24 @@
     gap: 25px;
 }
 
+.footer-nav-column .footer-link {
+    white-space: nowrap;
+    width: fit-content;
+}
+
 .footer-link {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.2s ease;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.footer-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
 }
 
 .footer-link:hover {
@@ -3893,6 +3992,8 @@
 
 .footer-newsletter {
     width: 40%;
+    margin:auto;
+    padding-left: 80px;
 }
 
 .newsletter-heading {
@@ -3964,10 +4065,11 @@
 }
 
 .copyright {
-    max-width: 1200px;
-    margin: 0 auto;
+    color: #D4AF37;
+    margin-top: 40px;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    margin-left: 0;
+    white-space: nowrap;
 }
 
 /* Media Queries for Footer */
