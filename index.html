@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alcami Header</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -20,6 +21,13 @@
             <div class="container">
                 <div class="logo">
                     <img src="https://via.placeholder.com/175x30?text=ALCAMI" alt="Alcami Logo">
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
 
                 <div class="nav-links">
@@ -44,6 +52,38 @@
                         </svg>
                     </div>
                     <button class="try-alcami-btn">
+                        Try Alcami
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Search Box (hidden by default) -->
+            <div class="search-box">
+                <div class="search-container">
+                    <input type="text" placeholder="Search For Products..." class="search-input">
+                    <button class="search-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu (hidden by default) -->
+            <div class="mobile-menu">
+                <div class="mobile-menu-container">
+                    <a href="#" class="mobile-nav-link">Home</a>
+                    <a href="#" class="mobile-nav-link">Shop</a>
+                    <a href="#" class="mobile-nav-link">Elements</a>
+                    <a href="#" class="mobile-nav-link">About Us</a>
+                    <a href="#" class="mobile-nav-link">Blog</a>
+                    <a href="#" class="mobile-nav-link">Contact</a>
+                    <button class="mobile-try-alcami-btn">
                         Try Alcami
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -769,6 +809,19 @@
             </div>
             
             <div class="testimonials-slider">
+                <div class="testimonials-navigation">
+                    <button class="nav-button prev-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="nav-button next-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                
                 <div class="testimonials-wrapper">
                     <!-- Testimonial 1 -->
                     <div class="testimonial-card">
@@ -832,24 +885,96 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <!-- Additional testimonials for scrolling -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://via.placeholder.com/60x60?text=Profile" alt="Customer Profile">
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Name Surname</p>
+                                <p class="author-position">Position, Company name</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://via.placeholder.com/60x60?text=Profile" alt="Customer Profile">
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Name Surname</p>
+                                <p class="author-position">Position, Company name</p>
+                            </div>
+                        </div>
+                    </div>
                 
-                <div class="testimonials-navigation">
-                    <button class="nav-button prev-button">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button class="nav-button next-button">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://via.placeholder.com/60x60?text=Profile" alt="Customer Profile">
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Name Surname</p>
+                                <p class="author-position">Position, Company name</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 7 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://via.placeholder.com/60x60?text=Profile" alt="Customer Profile">
+                            </div>
+                            <div class="author-info">
+                                <p class="author-name">Name Surname</p>
+                                <p class="author-position">Position, Company name</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <div class="testimonials-pagination">
                 <span class="pagination-dot active"></span>
+                <span class="pagination-dot"></span>
+                <span class="pagination-dot"></span>
                 <span class="pagination-dot"></span>
                 <span class="pagination-dot"></span>
                 <span class="pagination-dot"></span>
@@ -925,9 +1050,6 @@
         </div>
     </section>
     
-    <!-- Link to external JS file -->
-    <script src="./js/accordion.js"></script>
-    
     <!-- Newsletter Section -->
     <section class="newsletter-section">
         <div class="newsletter-container">
@@ -997,5 +1119,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Link to external JS file -->
+    <script src="./js/accordion.js"></script>
 </body>
 </html>
