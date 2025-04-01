@@ -3126,12 +3126,15 @@
 }
 
 .founders-video-img {
+    margin: auto;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: 80%;
     height: 100%;
     object-fit: cover;
+    border-radius: 32.36px;
 }
 
 .play-btn {
@@ -3141,7 +3144,8 @@
     transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background: #DEA453;
+
     backdrop-filter: blur(3px);
     border: none;
     border-radius: 50%;
@@ -3187,9 +3191,10 @@
 }
 
 .founders-title {
-    font-size: 42px;
-    font-weight: 500;
-    color: #322d2d;
+    font-size: 40.45px;
+    font-family: New Rail Alphabet;
+    font-weight: 300;
+    color: #322D2D;
     margin-bottom: 15px;
 }
 
@@ -3198,9 +3203,12 @@
 }
 
 .founders-text {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
+    font-size: 20px;
+    line-height: 100%;
+    color: #322D2D;
+    font-weight: 300;
+    font-family: New Rail Alphabet;
+    letter-spacing: 0px;
     width: 100%;
 }
 
@@ -3209,10 +3217,12 @@
     align-items: center;
     gap: 15px;
     padding: 12px 30px;
-    background-color: #d4b258;
-    color: #333;
-    font-size: 14px;
-    font-weight: 500;
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    color: #000000;
+    font-family: Oxanium;
+    font-size: 18.2px;
+    font-weight: 300;
+    letter-spacing: 0px;
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -4462,6 +4472,19 @@
 
     .logo-item img {
         max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .founders-video-img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .founders-video-img {
+        width: 100%;
+        border-radius: 0;
     }
 }
 
