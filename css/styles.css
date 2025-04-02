@@ -917,10 +917,9 @@
     line-height: 100%;
     letter-spacing: 3.03px;
     background: linear-gradient(92.57deg, #9E6718 -34.45%, #FFB545 127.1%);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     margin-bottom: 0;
 }
 
@@ -3386,7 +3385,7 @@
 /* Testimonials Section Styles */
 .testimonials-section {
     padding: 80px 0;
-    background-color: #f2f2f0;
+    background-color: #F0EFEB;
 }
 
 .testimonials-container {
@@ -3401,54 +3400,53 @@
 }
 
 .testimonials-title {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #333;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #322D2D;
+    margin-bottom: 16px;
 }
 
 .testimonials-subtitle {
-    font-size: 16px;
-    color: #666;
-}
-
-.testimonials-slider {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.testimonials-wrapper {
-    display: flex;
-    overflow-x: hidden;
-    gap: 20px;
-    padding: 10px 0;
-}
-
-.testimonial-card {
-    flex: 0 0 calc(33.333% - 14px);
-    background-color: #fff;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 30px;
-    transition: transform 0.3s ease;
-}
-
-.testimonial-rating {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.star {
-    color: #36b37e;
-    font-size: 18px;
-    margin-right: 2px;
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #322D2D;
+    margin-bottom: 48px;
 }
 
 .testimonial-text {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
     font-size: 16px;
-    line-height: 1.6;
-    color: #444;
-    margin-bottom: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #322D2D;
+    margin: 24px 0;
+}
+
+.author-name {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #322D2D;
+    margin: 0;
+}
+
+.author-position {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #322D2D;
+    margin: 0;
 }
 
 .testimonial-author {
@@ -3475,20 +3473,18 @@
     flex: 1;
 }
 
-.author-name {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-    margin: 0 0 5px;
+.testimonial-rating {
+    display: flex;
+    margin-bottom: 15px;
 }
 
-.author-position {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
+.star {
+    color: #36b37e;
+    font-size: 18px;
+    margin-right: 2px;
 }
 
-.testimonials-navigation {
+.testimonial-navigation {
     position: absolute;
     top: -80px;
     right: 0;
@@ -3500,23 +3496,36 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #000;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+}
+
+.arrow-icon {
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+}
+
+.nav-button.disabled {
+    background-color: #F0EFEB;
+    border: 1px solid #000;
+    cursor: not-allowed;
+}
+
+.nav-button.disabled .arrow-icon {
+    color: #000;
 }
 
 .nav-button:hover {
-    background-color: #f5f5f5;
+    background-color: #1a1717bd;
 }
 
-.nav-button svg {
-    width: 18px;
-    height: 18px;
-    color: #333;
+.nav-button:hover .arrow-icon {
+    color: #fff;
 }
 
 .testimonials-pagination {
@@ -4621,6 +4630,65 @@
         margin-bottom: 30px;
         padding: 0 20px;
     }
+}
+
+.testimonials-slider {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.testimonial-card {
+    flex: 0 0 calc(33.333% - 14px);
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-text {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #322D2D;
+    margin: 24px 0;
+}
+
+.author-name {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #322D2D;
+    margin: 0;
+}
+
+.author-position {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #322D2D;
+    margin: 0;
+    }
+    
+    .testimonials-navigation {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    display: flex;
+    gap: 10px;
 }
 
 

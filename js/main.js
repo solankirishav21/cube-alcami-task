@@ -167,12 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to update prev/next button states
     const updateButtonStates = () => {
-      prevButton.disabled = currentIndex === 0;
-      nextButton.disabled = currentIndex === cardCount - 1;
-
-      // Visual feedback for disabled state
-      prevButton.style.opacity = currentIndex === 0 ? "0.5" : "1";
-      nextButton.style.opacity = currentIndex === cardCount - 1 ? "0.5" : "1";
+      prevButton.classList.toggle("disabled", currentIndex === 0);
+      nextButton.classList.toggle("disabled", currentIndex === cardCount - 1);
     };
 
     // Next button click handler
