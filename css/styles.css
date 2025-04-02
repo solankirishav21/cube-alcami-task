@@ -2482,7 +2482,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 64.72px;
+    padding: 0 60px;
     gap: 60px;
 }
 
@@ -2492,19 +2492,23 @@
 }
 
 .morning-ritual-title {
-    font-size: 48px;
-    font-weight: 500;
-    color: #322d2d;
+    font-family: "New Rail Alphabet";
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #322D2D;
     margin-bottom: 20px;
-    line-height: 1.2;
 }
 
 .morning-ritual-subtitle {
-    font-size: 16px;
-    color: #666;
+    font-family: "New Rail Alphabet";
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24.27px;
+    letter-spacing: 0px;
+    color: #666666;
     margin-bottom: 40px;
-    line-height: 1.5;
-    max-width: 90%;
 }
 
 .ritual-steps {
@@ -2521,10 +2525,13 @@
 }
 
 .step-number {
-    font-size: 72px;
-    font-weight: 200;
-    color: #e5e5e5;
-    line-height: 1;
+    font-family: "New Rail Alphabet";
+    font-weight: 300;
+    font-size: 72.94px;
+    line-height: 94.56px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #322D2D;
     flex-shrink: 0;
 }
 
@@ -2535,31 +2542,44 @@
 }
 
 .step-title {
-    font-size: 22px;
-    font-weight: 500;
-    color: #caa648;
-    margin-bottom: 5px;
+    font-family: "New Rail Alphabet";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.27px;
+    letter-spacing: 0px;
+    background: linear-gradient(90deg, #9E6718 0%, #FFB545 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
 }
 
 .step-description {
+    font-family: "New Rail Alphabet";
+    font-weight: 300;
     font-size: 16px;
-    color: #666;
-    line-height: 1.5;
+    line-height: 20.23px;
+    letter-spacing: 0px;
+    color: #666666;
+    margin: 0;
 }
 
 .see-how-btn {
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    padding: 16px 45px;
-    background-color: #d4b258;
+    padding: 12.14px 24.27px;
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
     color: #333;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "New Rail Alphabet";
+    line-height: 16.18px;
+    letter-spacing: 0px;
 }
 
 .see-how-btn:hover {
@@ -2624,7 +2644,8 @@
 /* Responsive Styles for Morning Ritual Section */
 @media screen and (max-width: 1024px) {
     .morning-ritual-section {
-        padding: 60px 24px;
+        /* padding: 60px 24px; */
+        width: 100%;
     }
     
     .morning-ritual-container {
@@ -2658,6 +2679,8 @@
     
     .morning-ritual-container {
         gap: 32px;
+        padding: 0;
+        width: 100%;
     }
     
     .morning-ritual-title {
@@ -2697,14 +2720,18 @@
 
 @media screen and (max-width: 480px) {
     .morning-ritual-section {
-        padding: 40px 16px;
+        padding: 0;
     }
     
     .morning-ritual-title {
         font-size: 28px;
         margin-bottom: 16px;
     }
-    
+
+    .morning-ritual-container {
+        padding: 0;
+        width: 100%;
+    }
     .morning-ritual-subtitle {
         font-size: 16px;
         margin-bottom: 32px;
@@ -4524,7 +4551,7 @@
 /* Tablet Responsive Styles for Comparison Table */
 @media screen and (max-width: 768px) {
     .comparison-table {
-        display: block;
+    display: block;
         overflow-x: auto;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
