@@ -3976,7 +3976,8 @@
 }
 
 .footer-main {
-    padding: 60px 30px 0;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 .footer-container {
@@ -3991,15 +3992,16 @@
 .footer-columns-wrapper {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    gap: 40px;
+    padding-left: 85.25px;
 }
 
 .footer-logo {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .footer-logo img {
-    max-width: 230px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -4135,11 +4137,18 @@
 }
 
 .copyright {
-    color: #D4AF37;
-    margin-top: 40px;
-    font-size: 14px;
-    margin-left: 0;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #DEA453;
     white-space: nowrap;
+    overflow: visible;
+    text-align: left;
+    margin: 0;
+    padding: 20px 85.25px;
 }
 
 /* Media Queries for Footer */
