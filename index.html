@@ -246,52 +246,51 @@
         <div class="product-selection-container">
             <div class="product-display">
                 <div class="product-gallery">
-                    <div class="product-main-image">
-                        <img src="https://via.placeholder.com/300x400?text=Alcami+Product" alt="Alcami Product">
-                    </div>
-                    <div class="product-ingredients">
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Gynostemma" alt="Gynostemma">
-                            <span>Gynostemma</span>
+                    <div class="product-main-image-container">
+                        <div class="product-main-image">
+                            <img src="./assets/products-hero.png" alt="Alcami Product" class="main-product">
                         </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Reishi" alt="Reishi">
-                            <span>Reishi</span>
-                        </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Lion's+Mane" alt="Lion's Mane">
-                            <span>Lion's Mane</span>
-                        </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Cordyceps" alt="Cordyceps">
-                            <span>Cordyceps</span>
-                        </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Shiitake" alt="Shiitake">
-                            <span>Shiitake</span>
-                        </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Astragalus" alt="Astragalus">
-                            <span>Astragalus</span>
-                        </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Mucuna" alt="Mucuna">
-                            <span>Mucuna</span>
-                        </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Cinnamon" alt="Cinnamon">
-                            <span>Cinnamon</span>
-                        </div>
-                        <div class="ingredient-bubble">
-                            <img src="https://via.placeholder.com/50x50?text=Turmeric" alt="Turmeric">
-                            <span>Turmeric</span>
+                        <div class="product-navigation">
+                            <button class="nav-button prev-button disabled">
+                                <div class="arrow-icon">←</div>
+                            </button>
+                            <div class="pagination-dots">
+                                <span class="pagination-dot active"></span>
+                                <span class="pagination-dot"></span>
+                                <span class="pagination-dot"></span>
+                                <span class="pagination-dot"></span>
+                            </div>
+                            <button class="nav-button next-button">
+                                <div class="arrow-icon">→</div>
+                            </button>
                         </div>
                     </div>
+                    
                     <div class="product-thumbnails">
-                        <div class="thumbnail active"><img src="https://via.placeholder.com/60x60?text=Image+1" alt="Alcami Product"></div>
-                        <div class="thumbnail"><img src="https://via.placeholder.com/60x60?text=Image+2" alt="Alcami Product"></div>
-                        <div class="thumbnail"><img src="https://via.placeholder.com/60x60?text=Image+3" alt="Alcami Product"></div>
-                        <div class="thumbnail"><img src="https://via.placeholder.com/60x60?text=Image+4" alt="Alcami Product"></div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product1.png" alt="Product 1" data-index="1">
+                        </div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product2.png" alt="Product 2" data-index="2">
+                        </div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product3.png" alt="Product 3" data-index="3">
+                        </div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product4.jpeg" alt="Product 4" data-index="4">
+                        </div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product5.png" alt="Product 5" data-index="5">
+                        </div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product6.png" alt="Product 6" data-index="6">
+                        </div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product7.png" alt="Product 7" data-index="7">
+                        </div>
+                        <div class="thumbnail-item">
+                            <img src="./assets/product8.png" alt="Product 8" data-index="8">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -300,11 +299,7 @@
                     <h2>Alcami Elements</h2>
                     <div class="product-rating">
                         <div class="rating-stars">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
+                            <img src="./assets/review-product.png" alt="5 Star Rating">
                         </div>
                         <span class="rating-count">4.7 (999+ reviews)</span>
                     </div>
@@ -318,7 +313,7 @@
                         <label class="flavor-option">
                             <input type="radio" name="flavor" value="original" checked>
                             <div class="flavor-button">
-                                <img src="https://via.placeholder.com/120x170?text=Original" alt="Original Flavor">
+                                <img src="./assets/original-flavour.png" alt="Original Flavor">
                                 <span class="flavor-name">Original</span>
                                 <span class="best-seller-tag">BEST-SELLER</span>
                             </div>
@@ -326,14 +321,14 @@
                         <label class="flavor-option">
                             <input type="radio" name="flavor" value="matcha">
                             <div class="flavor-button">
-                                <img src="https://via.placeholder.com/120x170?text=Matcha" alt="Matcha Flavor">
+                                <img src="./assets/matcha-flavour.png" alt="Matcha Flavor">
                                 <span class="flavor-name">Matcha</span>
                             </div>
                         </label>
                         <label class="flavor-option">
                             <input type="radio" name="flavor" value="cacao">
                             <div class="flavor-button">
-                                <img src="https://via.placeholder.com/120x170?text=Cacao" alt="Cacao Flavor">
+                                <img src="./assets/cacao-flavour.png" alt="Cacao Flavor">
                                 <span class="flavor-name">Cacao</span>
                             </div>
                         </label>
@@ -359,17 +354,13 @@
                             <div class="included-box">
                                 <p>Every 30 Days</p>
                                 <div class="included-image">
-                                    <img src="https://via.placeholder.com/150x200?text=Alcami+Pouch" alt="Every 30 Days">
+                                    <img src="./assets/30days.png" alt="Every 30 Days">
                                 </div>
                             </div>
                             <div class="included-box">
                                 <p>One Time <span class="free-text">(Free)</span></p>
                                 <div class="included-image multiple-items">
-                                    <img src="https://via.placeholder.com/80x120?text=Bottle" alt="Bottle">
-                                    <span class="plus-sign">+</span>
-                                    <img src="https://via.placeholder.com/80x80?text=Container" alt="Container">
-                                    <span class="plus-sign">+</span>
-                                    <img src="https://via.placeholder.com/40x120?text=Spoon" alt="Spoon">
+                                    <img src="./assets/one-time.png" alt="One Time">
                                 </div>
                             </div>
                         </div>
@@ -548,9 +539,6 @@
                     <span class="btn-arrow">→</span>
                 </button>
             </div>
-            <!-- <div class="subscription-banner-image">
-                <img src="https://via.placeholder.com/600x400?text=Alcami+Product+and+Drink" alt="Alcami Product and Prepared Drink">
-            </div> -->
         </div>
     </section>
 

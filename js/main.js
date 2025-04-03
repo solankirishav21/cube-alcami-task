@@ -119,12 +119,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // Testimonials Slider Functionality
   const testimonialsWrapper = document.querySelector(".testimonials-wrapper");
   const testimonialCards = document.querySelectorAll(".testimonial-card");
-  const prevButton = document.querySelector(".prev-button");
-  const nextButton = document.querySelector(".next-button");
-  const paginationDots = document.querySelectorAll(".pagination-dot");
+  const testimonialsPrevButton = document.querySelector(
+    ".testimonials-section .prev-button"
+  );
+  const testimonialsNextButton = document.querySelector(
+    ".testimonials-section .next-button"
+  );
+  const testimonialsPaginationDots = document.querySelectorAll(
+    ".testimonials-section .pagination-dot"
+  );
 
   if (testimonialsWrapper && testimonialCards.length > 0) {
-    let currentIndex = 0;
+    let testimonialsCurrentIndex = 0;
     const cardCount = testimonialCards.length;
 
     // Calculate the width of a single testimonial card plus margins and gap
@@ -154,46 +160,52 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // Update active pagination dot
-      paginationDots.forEach((dot, i) => {
+      testimonialsPaginationDots.forEach((dot, i) => {
         dot.classList.toggle("active", i === index);
       });
 
       // Update current index
-      currentIndex = index;
+      testimonialsCurrentIndex = index;
 
       // Update button states
-      updateButtonStates();
+      updateTestimonialButtonStates();
     };
 
     // Function to update prev/next button states
-    const updateButtonStates = () => {
-      prevButton.classList.toggle("disabled", currentIndex === 0);
-      nextButton.classList.toggle("disabled", currentIndex === cardCount - 1);
+    const updateTestimonialButtonStates = () => {
+      testimonialsPrevButton.classList.toggle(
+        "disabled",
+        testimonialsCurrentIndex === 0
+      );
+      testimonialsNextButton.classList.toggle(
+        "disabled",
+        testimonialsCurrentIndex === cardCount - 1
+      );
     };
 
     // Next button click handler
-    nextButton.addEventListener("click", () => {
-      if (currentIndex < cardCount - 1) {
-        scrollToTestimonial(currentIndex + 1);
+    testimonialsNextButton.addEventListener("click", () => {
+      if (testimonialsCurrentIndex < cardCount - 1) {
+        scrollToTestimonial(testimonialsCurrentIndex + 1);
       }
     });
 
     // Previous button click handler
-    prevButton.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        scrollToTestimonial(currentIndex - 1);
+    testimonialsPrevButton.addEventListener("click", () => {
+      if (testimonialsCurrentIndex > 0) {
+        scrollToTestimonial(testimonialsCurrentIndex - 1);
       }
     });
 
     // Pagination dots click handlers
-    paginationDots.forEach((dot, index) => {
+    testimonialsPaginationDots.forEach((dot, index) => {
       dot.addEventListener("click", () => {
         scrollToTestimonial(index);
       });
     });
 
     // Initialize button states
-    updateButtonStates();
+    updateTestimonialButtonStates();
 
     // Handle testimonial slider touch events for mobile
     let startX, moveX;
@@ -220,12 +232,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (Math.abs(diff) > 50) {
           // Swipe threshold
-          if (diff > 0 && currentIndex < cardCount - 1) {
+          if (diff > 0 && testimonialsCurrentIndex < cardCount - 1) {
             // Swipe left (next)
-            scrollToTestimonial(currentIndex + 1);
-          } else if (diff < 0 && currentIndex > 0) {
+            scrollToTestimonial(testimonialsCurrentIndex + 1);
+          } else if (diff < 0 && testimonialsCurrentIndex > 0) {
             // Swipe right (prev)
-            scrollToTestimonial(currentIndex - 1);
+            scrollToTestimonial(testimonialsCurrentIndex - 1);
           }
         }
       }
@@ -238,7 +250,91 @@ document.addEventListener("DOMContentLoaded", function () {
     // Responsive handling - recalculate positions on resize
     window.addEventListener("resize", () => {
       // Re-scroll to maintain the correct position after resize
-      scrollToTestimonial(currentIndex);
+      scrollToTestimonial(testimonialsCurrentIndex);
+    });
+  }
+
+  // Product slider functionality
+  const mainImage = document.querySelector(".main-product");
+  const prevButton = document.querySelector(".product-navigation .prev-button");
+  const nextButton = document.querySelector(".product-navigation .next-button");
+  const paginationDots = document.querySelectorAll(
+    ".pagination-dots .pagination-dot"
+  );
+  const thumbnails = document.querySelectorAll(".thumbnail-item img");
+  const backgroundImage = document.querySelector(".ingredients-background");
+
+  let currentIndex = 0;
+  const productImages = [
+    "./assets/products-hero.png", // Hero image as first image
+    "./assets/product1.png",
+    "./assets/product2.png",
+    "./assets/product3.png",
+    "./assets/product4.jpeg",
+    "./assets/product5.png",
+    "./assets/product6.png",
+    "./assets/product7.png",
+    "./assets/product8.png",
+  ];
+
+  function updateSlider(index) {
+    if (!mainImage) return; // Guard clause if elements don't exist
+
+    // Update main image
+    mainImage.src = productImages[index];
+
+    // Update pagination dots
+    paginationDots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+
+    // Update navigation buttons
+    prevButton.classList.toggle("disabled", index === 0);
+    nextButton.classList.toggle("disabled", index === productImages.length - 1);
+
+    // Update thumbnails
+    thumbnails.forEach((thumb, i) => {
+      thumb.parentElement.classList.toggle("active", i === index);
+    });
+
+    // Show/hide background image only for the hero image
+    if (backgroundImage) {
+      backgroundImage.style.opacity = index === 0 ? "1" : "0";
+    }
+
+    currentIndex = index;
+  }
+
+  // Initialize slider if elements exist
+  if (mainImage && prevButton && nextButton) {
+    // Set initial state
+    updateSlider(0);
+
+    // Event listeners for navigation buttons
+    prevButton.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        updateSlider(currentIndex - 1);
+      }
+    });
+
+    nextButton.addEventListener("click", () => {
+      if (currentIndex < productImages.length - 1) {
+        updateSlider(currentIndex + 1);
+      }
+    });
+
+    // Event listeners for pagination dots
+    paginationDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        updateSlider(index);
+      });
+    });
+
+    // Event listeners for thumbnails
+    thumbnails.forEach((thumb, index) => {
+      thumb.addEventListener("click", () => {
+        updateSlider(index);
+      });
     });
   }
 });
