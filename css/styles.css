@@ -1630,12 +1630,12 @@
     margin: 20px 0;
 }
 
-.nav-button.prev-button {
+.product-navigation .nav-button.prev-button {
     position: absolute;
     left: 40px;
 }
 
-.nav-button.next-button {
+.product-navigation .nav-button.next-button {
     position: absolute;
     right: 40px;
 }
