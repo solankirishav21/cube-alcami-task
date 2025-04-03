@@ -3865,6 +3865,14 @@
     color: #322D2D;
     margin: 24px 0;
 }
+.testimonial-card{
+    width: 421.1774597167969;
+    height: 284.99853515625;
+    gap: 24.27px;
+    border-radius: 12.14px;
+    padding: 32.36px;
+
+}
 
 .author-name {
     font-family: 'New Rail Alphabet';
@@ -5082,9 +5090,13 @@
 }
 
 .testimonial-card {
+    width: 421.1774597167969;
+    height: 284.99853515625;
+    gap: 24.27px;
+    border-radius: 12.14px;
+    padding: 32.36px;
     flex: 0 0 calc(33.333% - 14px);
-    background-color: #fff;
-    border-radius: 0;
+    background-color: #FCFCFC;
     box-shadow: none;
     padding: 30px;
     transition: transform 0.3s ease;
