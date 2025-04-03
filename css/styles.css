@@ -1,7 +1,7 @@
 /* Global Styles */
 @font-face {
     font-family: 'New Rail Alphabet';
-    src: local('New Rail Alphabet');
+    src: url('../assets/fonts/NewRailAlphabet-Light\ \(1\).otf');
 }
 
 * {
@@ -11,10 +11,7 @@
     font-family: 'New Rail Alphabet', sans-serif;
     font-weight: 300;
 }
-.background-hero {
-    background-color: linear-gradient(180deg, rgba(243, 243, 243, 0.75) 0%, rgba(184, 184, 184, 0.8) 59.38%, rgba(243, 243, 243, 0.25) 100%);
 
-}
 /* Header Styles */
 .header {
     /* position: sticky; */
@@ -871,8 +868,6 @@
 }
 
 .ingredients-info h3 {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 3.03px;
@@ -884,8 +879,6 @@
 }
 
 .ingredients-info h2 {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 36px;
     line-height: 100%;
     color: #322D2D;
@@ -893,8 +886,6 @@
 }
 
 .ingredients-info p {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 21px;
     line-height: 30px;
     letter-spacing: 0px;
@@ -903,7 +894,6 @@
 }
 
 .ingredients-info p strong {
-    font-family: 'New Rail Alphabet';
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
@@ -942,7 +932,6 @@
     border-bottom-width: 1.01px;
     padding: 12.14px 24.27px;
     background: linear-gradient(92.57deg, #CAA648 -34.45%, #CAA648 -12.71%, #D5B147 4.32%, #E4C267 36.63%, #E2C065 85.1%, #DBB95E 102.87%, #D0AE52 114.18%, #C09F41 119.07%, #BB9A3C 127.1%);
-    font-family: 'New Rail Alphabet';
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
@@ -1803,8 +1792,6 @@
 }
 
 .rating-count {
-    font-family: New Rail Alphabet;
-    font-weight: 300;
     font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -1820,9 +1807,6 @@
 }
 
 .product-description {
-    font-family: New Rail Alphabet;
-    font-weight: 300;
-    font-size: 16.18px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: justify;
@@ -1836,7 +1820,6 @@
 }
 
 .flavor-selection h3 {
-    font-family: 'New Rail Alphabet', sans-serif;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 20px;
@@ -1873,8 +1856,6 @@
 }
 
 .flavor-name {
-    font-family: 'New Rail Alphabet', sans-serif;
-    font-weight: 300;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0;
@@ -1886,7 +1867,6 @@
 
 /* Original flavor specific style */
 .flavor-option:first-child .flavor-name {
-    font-weight: 300;
     color: #000000;
 }
 
@@ -1911,7 +1891,6 @@
     border-radius: 6.07px 0 6.07px 0;
     padding: 4px 12px;
     color: #FFFFFF;
-    font-family: 'New Rail Alphabet', sans-serif;
     font-weight: 700;
     font-size: 10.26px;
     line-height: 1;
@@ -2065,8 +2044,6 @@
 }
 
 .option-title {
-    font-family: 'New Rail Alphabet', sans-serif;
-    font-weight: 300;
     font-size: 24px;
     line-height: 16px;
     letter-spacing: 0px;
@@ -2080,8 +2057,6 @@
 }
 
 .current-price {
-    font-family: 'New Rail Alphabet', sans-serif;
-    font-weight: 300;
     font-size: 24px;
     line-height: 16px;
     letter-spacing: 0px;
@@ -2089,8 +2064,6 @@
 }
 
 .original-price {
-    font-family: 'New Rail Alphabet', sans-serif;
-    font-weight: 300;
     font-size: 24px;
     line-height: 16px;
     letter-spacing: 0px;
@@ -2176,7 +2149,6 @@
 
 .included-benefits li {
     font-family: "New Rail Alphabet", sans-serif;
-    font-weight: 300;
     font-size: 15.16px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -2217,8 +2189,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-family: "New Rail Alphabet", sans-serif;
-    font-weight: 300;
     font-size: 18.2px;
     line-height: 16.18px;
     letter-spacing: 0;
@@ -2316,7 +2286,6 @@
 }
 
 .shilajit-header h2 {
-    font-family: 'New Rail Alphabet';
     font-size: 48px;
     font-weight: 400;
     line-height: 120%;
@@ -2325,7 +2294,6 @@
 }
 
 .subtitle {
-    font-family: 'New Rail Alphabet';
     font-size: 14px;
     font-weight: 400;
     line-height: 100%;
@@ -2404,7 +2372,6 @@
 }
 
 .benefit-text h3 {
-    font-family: 'New Rail Alphabet';
     font-weight: 700;
     font-size: 18px;
     line-height: 24.27px;
@@ -2413,8 +2380,6 @@
 }
 
 .benefit-description {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 16.18px;
     line-height: 20.23px;
     color: #666666;
@@ -2439,9 +2404,7 @@
     background: #E2C065;
     border: none;
     border-radius: 505.64px;
-    font-family: 'New Rail Alphabet';
     font-size: 18.2px;
-    font-weight: 300;
     color: #000000;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -2552,8 +2515,6 @@
 }
 
 .certification-text {
-    font-family: New Rail Alphabet;
-    font-weight: 300;
     font-size: 20px;
     color: #322D2D;
     line-height: 24.27px;
@@ -2776,8 +2737,6 @@
 }
 
 .subscription-title {
-    font-family: New Rail Alphabet;
-    font-weight: 300;
     font-size: 41.43px;
     line-height: 100%;
     letter-spacing: 0px;
@@ -2785,7 +2744,6 @@
 }
 
 .subscription-title span {
-    font-family: New Rail Alphabet;
     font-weight: 700;
     font-size: 41.43px;
     line-height: 100%;
@@ -2939,8 +2897,6 @@
 }
 
 .morning-ritual-title {
-    font-family: "New Rail Alphabet";
-    font-weight: 300;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0px;
@@ -2949,8 +2905,6 @@
 }
 
 .morning-ritual-subtitle {
-    font-family: "New Rail Alphabet";
-    font-weight: 300;
     font-size: 20px;
     line-height: 24.27px;
     letter-spacing: 0px;
@@ -2972,8 +2926,6 @@
 }
 
 .step-number {
-    font-family: "New Rail Alphabet";
-    font-weight: 300;
     font-size: 72.94px;
     line-height: 94.56px;
     letter-spacing: 0px;
@@ -2989,7 +2941,6 @@
 }
 
 .step-title {
-    font-family: "New Rail Alphabet";
     font-weight: 700;
     font-size: 20px;
     line-height: 24.27px;
@@ -3002,8 +2953,6 @@
 }
 
 .step-description {
-    font-family: "New Rail Alphabet";
-    font-weight: 300;
     font-size: 16px;
     line-height: 20.23px;
     letter-spacing: 0px;
@@ -3019,12 +2968,10 @@
     background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
     color: #333;
     font-size: 20px;
-    font-weight: 300;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    font-family: "New Rail Alphabet";
     line-height: 16.18px;
     letter-spacing: 0px;
 }
@@ -3420,7 +3367,6 @@
 .comparison-table tbody td:first-child {
     text-align: left;
     padding-left: 24px;
-    font-family: "New Rail Alphabet";
     font-weight: 700;
     font-size: 16px;
     line-height: 19.16px;
@@ -3429,8 +3375,6 @@
 }
 
 .comparison-table tbody td:not(:first-child) {
-    font-family: "New Rail Alphabet";
-    font-weight: 300;
     font-size: 16px;
     line-height: 19.16px;
     letter-spacing: 0px;
@@ -3453,8 +3397,6 @@
 
 .product-name {
     color: #666666;
-    font-family: New Rail Alphabet;
-    font-weight: 300;
     font-size: 12px;
     line-height: 19.16px;
     letter-spacing: 0px;
@@ -3496,8 +3438,6 @@
 .risk-free-btn {
     background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
     color: #000000;
-    font-family: "New Rail Alphabet";
-    font-weight: 300;
     font-size: 20px;
     line-height: 16.18px;
     letter-spacing: 0px;
@@ -3696,8 +3636,6 @@
 
 .founders-title {
     font-size: 40.45px;
-    font-family: New Rail Alphabet;
-    font-weight: 300;
     color: #322D2D;
     margin-bottom: 15px;
 }
@@ -3710,8 +3648,6 @@
     font-size: 20px;
     line-height: 100%;
     color: #322D2D;
-    font-weight: 300;
-    font-family: New Rail Alphabet;
     letter-spacing: 0px;
     width: 100%;
 }
@@ -3725,7 +3661,6 @@
     color: #000000;
     font-family: Oxanium;
     font-size: 18.2px;
-    font-weight: 300;
     letter-spacing: 0px;
     text-decoration: none;
     border-radius: 50px;
@@ -3846,8 +3781,6 @@
 }
 
 .testimonials-title {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 0px;
@@ -3856,8 +3789,6 @@
 }
 
 .testimonials-subtitle {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -3866,8 +3797,6 @@
 }
 
 .testimonial-text {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -3876,8 +3805,6 @@
 }s
 
 .author-name {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -3886,8 +3813,6 @@
 }
 
 .author-position {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -4061,7 +3986,6 @@
 
 .faq-title {
     font-size: 40px;
-    font-weight: 300;
     color: #322d2d;
     margin-bottom: 20px;
 }
@@ -4125,7 +4049,6 @@
 
 .accordion-header h3 {
     font-size: 20px;
-    font-weight: 300;
     color: #322d2d;
     margin: 0;
 }
@@ -4486,7 +4409,6 @@
     align-items: center;
     transition: color 0.3s ease;
     font-family: Oxanium;
-    font-weight: 300;
     font-size: 14.16px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -4594,7 +4516,6 @@
 
 .copyright {
     font-family: 'Oxanium', sans-serif;
-    font-weight: 300;
     font-size: 16.18px;
     line-height: 120%;
     letter-spacing: 0%;
@@ -5014,8 +4935,6 @@
 }
 
 .testimonial-text {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -5024,8 +4943,6 @@
 }
 
 .author-name {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
@@ -5034,8 +4951,6 @@
 }
 
 .author-position {
-    font-family: 'New Rail Alphabet';
-    font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0%;
