@@ -3759,12 +3759,13 @@
     }
     
     .founders-content-inner {
-        flex-direction: column;
+        display: block;
         gap: 30px;
     }
     
     .founders-content-inner > div:first-child {
-        flex: 0 0 100%;
+        align-items: center;
+        margin-bottom: 30px;
     }
     
     .founders-content-text {
@@ -4449,6 +4450,7 @@
 .footer-logo img {
     max-width: 100%;
     height: auto;
+    padding-top: 50px;
 }
 
 .footer-columns {
@@ -4550,8 +4552,8 @@
 
 .footer-subscribe-btn {
     padding: 15px 25px;
-    background-color: #D4AF37;
-    color: #242424;
+    background-color: #FFFFFF;
+    color: #DEA453;
     border: none;
     font-size: 16px;
     font-weight: 500;
@@ -4629,7 +4631,7 @@
     }
     .footer-columns-wrapper {
         margin-bottom: 0px;
-        padding-left: 70px;
+        padding-left: 0;
     }
     .footer-columns {
         gap: 40px;
@@ -4662,6 +4664,7 @@
     .footer-columns {
         flex-direction: column;
         gap: 30px;
+        align-items: center;
     }
     
     .footer-nav-column {
