@@ -1256,23 +1256,23 @@
 
 /* Responsive styles for As Seen In section */
 @media screen and (max-width: 1024px) {
+    .as-seen-in {
+        margin-top: 100px;
+        padding: 30px 0;
+    }
+    
     .as-seen-container {
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 30px;
         padding: 0 30px;
     }
     
-    .as-seen-title {
-        width: 100%;
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 30px;
+    .logo-item {
+        flex: 0 0 calc(70% - 30px);
     }
     
-    .logo-item {
-        flex: 0 0 calc(20% - 30px);
-        margin: 0;
+    .as-seen-title {
+        font-size: 18px;
+        margin-bottom: 35px;
     }
 }
 
@@ -2294,12 +2294,13 @@
 .shilajit-container {
     max-width: 1328px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 90px;
 }
 
 .shilajit-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    padding-left: 140px;
 }
 
 .shilajit-header h2 {
@@ -2322,56 +2323,62 @@
 
 .shilajit-content {
     display: flex;
-    gap: 48px;
-    margin-bottom: 48px;
+    gap: 80px;
+    align-items: flex-start;
+    position: relative;
 }
 
 .shilajit-image {
-    flex: 0 0 730px;
-    height: 774.48px;
+    padding-top: 50px;
+    width: 40%;
+    position: relative;
 }
 
 .shilajit-image img {
-    width: 80%;
-    height: 80%;
-    /* object-fit: contain; */
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .shilajit-benefits {
-    flex: 1;
+    flex: 0 0 60%;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 24px;
 }
 
 .benefit-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
 }
 
 .benefit-card {
-    background: #FFFFFF;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    width: Fill(367px);
+    height: FIll(199px);
+    background:#FAFAF8;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 17px;
+    padding: 20px 24px;
+    margin-right: 0px;
 }
 
 .benefit-card-content {
     display: flex;
     align-items: flex-start;
     gap: 12px;
+    margin-bottom: 8px;
 }
 
 .benefit-icon {
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .benefit-icon img {
@@ -2380,110 +2387,78 @@
     object-fit: contain;
 }
 
-.benefit-text h3 {
-    font-family: 'New Rail Alphabet';
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-    color: #322D2D;
+.benefit-text {
+    flex: 1;
 }
 
-.benefit-description {
+.benefit-text h3 {
     font-family: 'New Rail Alphabet';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24.27px;
     color: #666666;
     margin: 0;
 }
 
+.benefit-description {
+    font-family: 'New Rail Alphabet';
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 20.23px;
+    color: #666666;
+    margin: 0;
+    padding-left: 36px;
+    letter-spacing: 0;
+}
+
 .try-button-container {
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .try-shilajit-btn {
-    background: #E2C065;
-    color: #0c0c0cFF;
-    font-family: 'New Rail Alphabet';
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 100%;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 505px;
-    cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
+    gap: 30px;
+    padding: 12.14px 24.27px;
+    background: #E2C065;
+    border: none;
+    border-radius: 505.64px;
+    font-family: 'New Rail Alphabet';
+    font-size: 18.2px;
+    font-weight: 300;
+    color: #000000;
+    cursor: pointer;
     transition: all 0.3s ease;
+    width: auto;
+    min-width: 200px;
 }
 
-.try-shilajit-btn:hover {
-    opacity: 0.9;
-}
-
-@media screen and (max-width: 1200px) {
-    .shilajit-container {
-        padding: 0 32px;
-    }
-
-    .shilajit-content {
-        gap: 32px;
-    }
-
-    .shilajit-image {
-        flex: 0 0 50%;
-        height: auto;
-        aspect-ratio: 730/774;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .shilajit-content {
-        flex-direction: column;
-    }
-
-    .shilajit-image {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .shilajit-benefits {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .benefit-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 24px;
-    }
-
-    .benefit-card {
-        flex: 0 0 calc(50% - 12px);
-    }
+.try-shilajit-btn .btn-arrow {
+    display: inline-flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-    .shilajit-section {
-        padding: 60px 0;
+    .try-button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
     }
 
-    .shilajit-container {
-        padding: 0 24px;
-    }
-
-    .shilajit-header h2 {
-        font-size: 36px;
-    }
-
-    .benefit-wrapper {
-        flex-direction: column;
-    }
-
-    .benefit-card {
-        flex: 0 0 100%;
+    .try-shilajit-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 14px 24px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
     }
 }
 
@@ -2719,7 +2694,8 @@
     }
     
     .benefit-wrapper {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
     
     .benefit-card {
@@ -5189,6 +5165,34 @@
     letter-spacing: 0%;
     text-align: justify;
     color: #322D2D;
+}
+
+@media screen and (max-width: 1024px) {
+    .shilajit-header {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+    
+    .shilajit-header h2,
+    .subtitle {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shilajit-header {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .shilajit-header h2,
+    .subtitle {
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 
