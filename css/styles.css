@@ -3864,15 +3864,7 @@
     letter-spacing: 0%;
     color: #322D2D;
     margin: 24px 0;
-}
-.testimonial-card{
-    width: 421.1774597167969;
-    height: 284.99853515625;
-    gap: 24.27px;
-    border-radius: 12.14px;
-    padding: 32.36px;
-
-}
+}s
 
 .author-name {
     font-family: 'New Rail Alphabet';
@@ -5204,6 +5196,150 @@
     .subtitle {
         text-align: center;
         padding-left: 0;
+    }
+
+    .product-selection-container {
+        padding: 20px 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .product-selection-container {
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .most-popular-badge {
+        font-size: 14px;
+        width: 100%;
+    }
+    .product-gallery {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .product-thumbnails {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .product-details {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .purchase-option {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 15px 0;
+    }
+
+    .included-content {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .included-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .included-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .included-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .whats-included {
+        padding: 0;
+        width: 100%;
+    }
+    .included-benefits {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+    .included-image {
+        width: 50%;
+        box-sizing: border-box;
+        height: auto;
+        margin: 0 auto;
+    }
+    .multiple-items {
+        width: 100%;
+    }
+    .flavor-options {
+        width: 100%;
+        box-sizing: border-box;
+        gap: 15px;
+    }
+
+    .flavor-option {
+        width: 100%;
+        margin: 0;
+    }
+
+    .flavor-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .add-to-cart-btn {
+        width: 80%;
+        max-width: 300px;
+        margin: 20px auto;
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+
+    .included-image img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .included-box p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .included-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .included-benefits {
+        padding: 0 15px;
+    }
+
+    .included-benefits li {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    .option-title {
+        font-size: 16px;
+    }
+
+    .current-price {
+        font-size: 18px;
+    }
+
+    .original-price {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 12px 0;
     }
 }
 
