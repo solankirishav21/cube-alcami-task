@@ -13,7 +13,7 @@
 
 /* Header Styles */
 .header {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 100;
     background-color: #fff;
@@ -321,7 +321,7 @@
 }
 
 .hero .container {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
     padding: 0 80px;
     display: flex;
@@ -438,11 +438,18 @@
     .hero {
         padding: 20px 0;
     }
+    .hero-content {
+        flex: 0 1 100%;
+    }
+    .hero-image {
+        flex: 0;
+        height: 200%;
+    }
 
     .hero .container {
         padding: 0 20px;
         flex-direction: column;
-        gap: 10px;
+        gap: 50px;
     }
 
     .hero-content {
@@ -475,10 +482,6 @@
 @media screen and (max-width: 768px) {
     .hero {
         padding: 16px 0;
-    }
-
-    .hero .container {
-        gap: 8px;
     }
 
     .hero-title {
@@ -686,60 +689,13 @@
     stroke: currentColor;
 }
 
-.ingredients-bg {
-    position: absolute;
-    top: 50%;
-    right: -20%;
-    transform: translateY(-50%);
-    width: 140%;
-    height: 140%;
-    z-index: 1;
-    opacity: 0.1;
-}
-
-.ingredients-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.product-images {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .product-img {
-    max-width: 400px;
+    /* max-width: 400px; */
     height: auto;
     position: relative;
     transition: transform 0.3s ease;
 }
 
-.product1 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-}
-
-.product2 {
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%) scale(0.85);
-    z-index: 2;
-}
-
-.product3 {
-    top: 60%;
-    left: 70%;
-    transform: translate(-50%, -50%) scale(0.85);
-    z-index: 1;
-}
 
 @media screen and (max-width: 1200px) {
     .hero h1 {
@@ -895,9 +851,8 @@
 }
 
 .ingredients-main-img {
-    width: 730px;
-    height: 774.48px;
-    /* border: 0.75px solid #D9D9D9; */
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -975,51 +930,6 @@
     color: #666 !important;
 }
 
-#gynostemma {
-    top: 10%;
-    left: 10%;
-}
-
-#reishi {
-    top: 20%;
-    right: 10%;
-}
-
-#lion-mane {
-    top: 40%;
-    right: 5%;
-}
-
-#mucuna {
-    top: 55%;
-    right: 15%;
-}
-
-#polygala {
-    top: 15%;
-    left: 20%;
-}
-
-#shiitake {
-    bottom: 30%;
-    left: 5%;
-}
-
-#cordyceps {
-    bottom: 20%;
-    right: 30%;
-}
-
-#astragalus {
-    bottom: 15%;
-    left: 30%;
-}
-
-#he-shou-wu {
-    bottom: 5%;
-    left: 40%;
-}
-
 .view-ingredients-btn {
     width: 307.241455078125px;
     border-radius: 505.64px;
@@ -1062,13 +972,123 @@
     transform: translateX(4px);
 }
 
+
+@media screen and (max-width: 1350px) {
+    .ingredients .container {
+        width: 100%;
+        max-width: 912px;
+        margin: 0 auto;
+        padding: 0 24px;
+        height: auto;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        max-width: 730px;
+    }
+
+    .ingredients-main-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 730/774.48;
+    }
+
+    .ingredients-info {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ingredients-info h3 {
+        font-size: 22px;
+    }
+
+    .ingredients-info h2 {
+        font-size: 32px;
+    }
+
+    .ingredients-info p {
+        font-size: 19px;
+        line-height: 28px;
+    }
+}
+
+/* Medium Screen Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .ingredients {
+        margin-top: 72px;
+    }
+
+    .ingredients .container {
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .ingredients-info h3 {
+        font-size: 20px;
+    }
+
+    .ingredients-info h2 {
+        font-size: 28px;
+    }
+
+    .ingredients-info p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 24px;
+    }
+
+    .view-ingredients-btn {
+        width: 100%;
+        max-width: 307px;
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .ingredients {
+        margin-top: 64px;
+    }
+
+    .ingredients .container {
+        padding: 0 16px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .ingredients-info h3 {
+        font-size: 18px;
+        letter-spacing: 2.5px;
+    }
+
+    .ingredients-info h2 {
+        font-size: 24px;
+    }
+
+    .ingredients-info p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .view-ingredients-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
 /* Guarantees Section Styles */
 .guarantees {
     padding: 60px 0;
     background-color: #F9F9F9;
-    width: 1328px;
-    height: 114.27555084228516px;
-    margin-left: 64px;
+    width: 100%;
+    height: 100%;
     border-radius: 14.16px;
 }
 
@@ -1084,15 +1104,15 @@
     font-size: 18px;
     font-weight: 500;
     color: #caa648;
-    margin-right: 60px;
+    padding-right: 60px;
     white-space: nowrap;
 }
 
 .guarantee-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    gap: 30px;
+    gap: 10px;
 }
 
 .guarantee-item {
@@ -1107,7 +1127,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 .guarantee-icon svg {
@@ -1272,7 +1292,6 @@
     
     .as-seen-title {
         font-size: 18px;
-        margin-bottom: 35px;
     }
 }
 
@@ -1292,7 +1311,8 @@
     
     .as-seen-title {
         font-size: 16px;
-        margin-bottom: 25px;
+        margin-right: 0;
+        margin-bottom: 0px;
     }
 }
 
@@ -1312,7 +1332,7 @@
     
     .as-seen-title {
         font-size: 14px;
-        margin-bottom: 20px;
+        
     }
 }
 
@@ -3208,11 +3228,11 @@
 .stats-banner {
     position: relative;
     width: 100%;
-    height: 100;
+    height: auto;
     background: url('../assets/mushroom.jpeg') no-repeat center center;
     background-size: cover;
     overflow: hidden;
-    padding: 120px 20px;
+    padding: 70px 20px;
 }
 
 .stats-overlay {
@@ -3221,7 +3241,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -3997,6 +4017,7 @@
 }
 
 @media screen and (max-width: 768px) {
+    
     .testimonials-section {
         padding: 60px 0;
     }
@@ -4027,7 +4048,7 @@
     }
     
     .testimonial-card {
-        padding: 20px;
+        padding: 10px;
     }
 }
 
@@ -4416,7 +4437,7 @@
 
 /* Footer Styles - Complete Redesign */
 .footer {
-    background-color: #242424;
+    background-color: #322D2D;
     color: white;
     padding: 0;
 }
@@ -4430,7 +4451,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 100;
+    max-width: 100%;
     margin: 0 auto;
     gap: 60px;
 }
@@ -4475,6 +4496,12 @@
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
+    font-family: Oxanium;
+    font-weight: 300;
+    font-size: 14.16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
 }
 
 .footer-link img {
@@ -4614,10 +4641,23 @@
 }
 
 @media screen and (max-width: 768px) {
-    .footer-main {
-        padding: 40px 20px 0;
+    .footer-logo {
+        margin:auto;
+        padding-left: 0px;
+        align-items: center;
+        justify-content: center;
+
     }
-    
+    .footer-logo img {
+        /* width: 100%;
+        height: auto;
+        margin:0; */
+    }
+
+    .footer-columns-wrapper {
+        margin-bottom: 0px;
+        padding-left: 70px;
+    }
     .footer-columns {
         gap: 40px;
     }
@@ -4625,11 +4665,20 @@
     .footer-social {
         margin-top: 20px;
     }
-    
+    .footer-newsletter {
+        width: 100%;
+        padding-left: 0;
+    }
     .footer-copyright {
         margin:0;
         padding: 5px;
     }
+}
+.copyright {
+    padding: 0;
+    font-size: 12px;
+    margin-top: 22px;
+    text-align: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -4743,115 +4792,6 @@
     }
 }
 
-/* Tablet Styles (max-width: 991px) */
-@media screen and (max-width: 991px) {
-    .ingredients .container {
-        width: 100%;
-        max-width: 912px;
-        margin: 0 auto;
-        padding: 0 24px;
-        height: auto;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .product-image {
-        width: 100%;
-        height: auto;
-        max-width: 730px;
-    }
-
-    .ingredients-main-img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 730/774.48;
-    }
-
-    .ingredients-info {
-        width: 100%;
-        max-width: 550px;
-        height: auto;
-        text-align: center;
-        align-items: center;
-    }
-
-    .ingredients-info h3 {
-        font-size: 22px;
-    }
-
-    .ingredients-info h2 {
-        font-size: 32px;
-    }
-
-    .ingredients-info p {
-        font-size: 19px;
-        line-height: 28px;
-    }
-}
-
-/* Medium Screen Styles (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .ingredients {
-        margin-top: 720px;
-    }
-
-    .ingredients .container {
-        padding: 0 20px;
-        gap: 24px;
-    }
-
-    .ingredients-info h3 {
-        font-size: 20px;
-    }
-
-    .ingredients-info h2 {
-        font-size: 28px;
-    }
-
-    .ingredients-info p {
-        font-size: 18px;
-        line-height: 26px;
-        margin-bottom: 24px;
-    }
-
-    .view-ingredients-btn {
-        width: 100%;
-        max-width: 307px;
-        justify-content: center;
-    }
-}
-
-/* Mobile Styles (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    .ingredients {
-        margin-top: 640px;
-    }
-
-    .ingredients .container {
-        padding: 0 16px;
-        gap: 20px;
-    }
-
-    .ingredients-info h3 {
-        font-size: 18px;
-        letter-spacing: 2.5px;
-    }
-
-    .ingredients-info h2 {
-        font-size: 24px;
-    }
-
-    .ingredients-info p {
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 20px;
-    }
-
-    .view-ingredients-btn {
-        padding: 10px 20px;
-        font-size: 13px;
-    }
-}
 
 /* Guarantees Section Responsive Styles */
 @media screen and (max-width: 1024px) {
