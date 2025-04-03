@@ -17,145 +17,147 @@
         </div>
 
         <!-- Navigation Bar -->
-        <nav class="navbar">
+         <section class="background-hero">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <img src="./assets/logo-navbar.png" alt="Alcami Logo">
+                    </div>
+
+                    <button class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <!-- Search Form (hidden by default) -->
+                    <form class="inline-search-form">
+                        <input type="text" placeholder="Search For Products..." class="inline-search-input">
+                        <button type="button" class="inline-search-close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="nav-links">
+                        <a href="#" class="nav-link">Home</a>
+                        <div class="nav-link-dropdown">
+                            <a href="#" class="nav-link">Shop</a>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="nav-link">Elements</a>
+                        <a href="#" class="nav-link">About Us</a>
+                        <a href="#" class="nav-link">Blog</a>
+                        <a href="#" class="nav-link">Contact</a>
+                    </div>
+
+                    <div class="action-buttons">
+                        <div class="search-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <button class="try-alcami-btn">
+                            Try Alcami
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Search Box (hidden by default) -->
+                <div class="search-box">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search For Products..." class="search-input">
+                        <button class="search-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu (hidden by default) -->
+                <div class="mobile-menu">
+                    <div class="mobile-menu-container">
+                        <a href="#" class="mobile-nav-link">Home</a>
+                        <a href="#" class="mobile-nav-link">Shop</a>
+                        <a href="#" class="mobile-nav-link">Elements</a>
+                        <a href="#" class="mobile-nav-link">About Us</a>
+                        <a href="#" class="mobile-nav-link">Blog</a>
+                        <a href="#" class="mobile-nav-link">Contact</a>
+                        <button class="mobile-try-alcami-btn">
+                            Try Alcami
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
             <div class="container">
-                <div class="logo">
-                    <img src="./assets/logo-navbar.png" alt="Alcami Logo">
-                </div>
-
-                <button class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <!-- Search Form (hidden by default) -->
-                <form class="inline-search-form">
-                    <input type="text" placeholder="Search For Products..." class="inline-search-input">
-                    <button type="button" class="inline-search-close">
+                <div class="hero-content">
+                    <div class="rating">
+                        <div class="rating-pill">
+                            <img src="./assets/star-hero.png" alt="Star Rating" class="star-hero">
+                            <p>4.8 star rating</p>
+                        </div>
+                        <p class="award">awarded the top adaptogen blend in the world</p>
+                    </div>
+                    <p class="hero-title">Achieve your highest self.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h2>10x</h2>
+                            <p>concentration</p>
+                        </div>
+                        <div class="stat">
+                            <h2>9</h2>
+                            <p>powerful ingredients</p>
+                        </div>
+                        <div class="stat">
+                            <h2>1000<span>mg</span></h2>
+                            <p>of Adaptogens per dose</p>
+                        </div>
+                    </div>
+                    <button class="shop-now-btn">
+                        Shop Now
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </form>
-
-                <div class="nav-links">
-                    <a href="#" class="nav-link">Home</a>
-                    <div class="nav-link-dropdown">
-                        <a href="#" class="nav-link">Shop</a>
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <a href="#" class="nav-link">Elements</a>
-                    <a href="#" class="nav-link">About Us</a>
-                    <a href="#" class="nav-link">Blog</a>
-                    <a href="#" class="nav-link">Contact</a>
-                </div>
-
-                <div class="action-buttons">
-                    <div class="search-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <button class="try-alcami-btn">
-                        Try Alcami
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 5L21 12M21 12L14 19M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                 </div>
-            </div>
-            
-            <!-- Search Box (hidden by default) -->
-            <div class="search-box">
-                <div class="search-container">
-                    <input type="text" placeholder="Search For Products..." class="search-input">
-                    <button class="search-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+                <div class="hero-image">
+                        <img src="./assets/hero.png" alt="Alcami Hero Product" class="product-img">
                 </div>
             </div>
-            
-            <!-- Mobile Menu (hidden by default) -->
-            <div class="mobile-menu">
-                <div class="mobile-menu-container">
-                    <a href="#" class="mobile-nav-link">Home</a>
-                    <a href="#" class="mobile-nav-link">Shop</a>
-                    <a href="#" class="mobile-nav-link">Elements</a>
-                    <a href="#" class="mobile-nav-link">About Us</a>
-                    <a href="#" class="mobile-nav-link">Blog</a>
-                    <a href="#" class="mobile-nav-link">Contact</a>
-                    <button class="mobile-try-alcami-btn">
-                        Try Alcami
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </div>
+        </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="rating">
-                    <div class="rating-pill">
-                        <img src="./assets/star-hero.png" alt="Star Rating" class="star-hero">
-                        <p>4.8 star rating</p>
-                    </div>
-                    <p class="award">awarded the top adaptogen blend in the world</p>
-                </div>
-                <p class="hero-title">Achieve your highest self.</p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <h2>10x</h2>
-                        <p>concentration</p>
-                    </div>
-                    <div class="stat">
-                        <h2>9</h2>
-                        <p>powerful ingredients</p>
-                    </div>
-                    <div class="stat">
-                        <h2>1000<span>mg</span></h2>
-                        <p>of Adaptogens per dose</p>
-                    </div>
-                </div>
-                <button class="shop-now-btn">
-                    Shop Now
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 5L21 12M21 12L14 19M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
+        <!-- Feature Banner -->
+        <section class="feature-banner">
+            <div class="container">
+                <h3>Incredible Taste And Effects You Can Feel</h3>
             </div>
-            <div class="hero-image">
-                    <img src="./assets/hero.png" alt="Alcami Hero Product" class="product-img">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Feature Banner -->
-    <section class="feature-banner">
-        <div class="container">
-            <h3>Incredible Taste And Effects You Can Feel</h3>
-        </div>
-    </section>
-
-    <!-- Ingredients Section -->
-    <section class="ingredients">
-        <div class="container">
-            <div class="product-image">
-                <img src="./assets/ingredients-img.png" alt="Alcami Product Pouch" class="ingredients-main-img">
-            </div>
+        <!-- Ingredients Section -->
+        <section class="ingredients">
+            <div class="container">
+                <div class="product-image">
+                    <img src="./assets/ingredients-img.png" alt="Alcami Product Pouch" class="ingredients-main-img">
+                </div>
+            </section>
             <div class="ingredients-info">
                 <h3>9 POWERFUL ELEMENTS</h3>
                 <h2>All of the Best Ingredients, None of the Compromise</h2>
