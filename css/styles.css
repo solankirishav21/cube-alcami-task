@@ -2983,13 +2983,13 @@ button span{
 /* Responsive Styles for Morning Ritual Section */
 @media screen and (max-width: 1024px) {
     .morning-ritual-section {
-        /* padding: 60px 24px; */
         width: 100%;
     }
     
     .morning-ritual-container {
         flex-direction: column;
         gap: 40px;
+        padding: 0;
     }
     
     .morning-ritual-content,
@@ -3012,10 +3012,7 @@ button span{
 }
 
 @media screen and (max-width: 768px) {
-    .morning-ritual-section {
-        padding: 48px 20px;
-    }
-    
+ 
     .morning-ritual-container {
         gap: 32px;
         padding: 0;
