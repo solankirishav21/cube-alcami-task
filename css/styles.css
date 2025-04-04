@@ -3544,7 +3544,7 @@ button span{
 .play-btn .play-icon {
     color: #fff;
     font-size: 24px;
-    margin-left: 5px;
+    padding-left: 0;
 }
 
 .founders-content {
