@@ -1,6 +1,3 @@
-document.querySelectorAll("img").forEach((img) => {
-  console.log(img.src, img.loading);
-});
 document.addEventListener("DOMContentLoaded", function () {
   // Search functionality
   const searchIcon = document.querySelector(".search-icon");
@@ -268,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentIndex = 0;
   const productImages = [
-    "./assets/products-hero.png", // Hero image as first image
+    "./assets/products-hero.png",
     "./assets/product1.png",
     "./assets/product2.png",
     "./assets/product3.png",
@@ -280,8 +277,6 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   function updateSlider(index) {
-    if (!mainImage) return; // Guard clause if elements don't exist
-
     // Update main image
     mainImage.src = productImages[index];
 
@@ -298,8 +293,6 @@ document.addEventListener("DOMContentLoaded", function () {
     thumbnails.forEach((thumb, i) => {
       thumb.parentElement.classList.toggle("active", i === index);
     });
-
-    // Show/hide background image only for the hero image
     if (backgroundImage) {
       backgroundImage.style.opacity = index === 0 ? "1" : "0";
     }
@@ -309,10 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize slider if elements exist
   if (mainImage && prevButton && nextButton) {
-    // Set initial state
     updateSlider(0);
-
-    // Event listeners for navigation buttons
     prevButton.addEventListener("click", () => {
       if (currentIndex > 0) {
         updateSlider(currentIndex - 1);
@@ -324,15 +314,11 @@ document.addEventListener("DOMContentLoaded", function () {
         updateSlider(currentIndex + 1);
       }
     });
-
-    // Event listeners for pagination dots
     paginationDots.forEach((dot, index) => {
       dot.addEventListener("click", () => {
         updateSlider(index);
       });
     });
-
-    // Event listeners for thumbnails
     thumbnails.forEach((thumb, index) => {
       thumb.addEventListener("click", () => {
         updateSlider(index);
