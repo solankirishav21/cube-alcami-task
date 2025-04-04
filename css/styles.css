@@ -48,7 +48,6 @@ button span{
     margin: 0;
     color: #fff;
     font-size: 14px;
-    font-weight: 500;
     letter-spacing: 0.5px;
 }
 
@@ -82,7 +81,6 @@ button span{
     color: #333;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -246,7 +244,6 @@ button span{
     font-size: 24px;
     color: #1C1C1C;
     text-decoration: none;
-    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -259,15 +256,8 @@ button span{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #D4AF37;
-    color: #fff;
-    border: none;
     padding: 12px 25px;
     font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
 }
 
 .mobile-try-alcami-btn:hover {
@@ -345,7 +335,6 @@ button span{
     font-size: 56px;
     line-height: 1.1;
     margin-bottom: 40px;
-    font-weight: 500;
     white-space: nowrap;
 }
 
@@ -380,7 +369,6 @@ button span{
 .stat h2 {
     font-size: 48px;
     line-height: 1;
-    font-weight: 600;
     margin: 0;
     background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
     -webkit-background-clip: text;
@@ -568,14 +556,12 @@ button span{
 .rating p {
     color: #1C1C1C;
     font-size: 14px;
-    font-weight: 500;
     line-height: 1.4;
     margin: 0;
 }
 
 .award {
     color: #111111;
-    font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
@@ -649,7 +635,6 @@ button span{
     font-size: 30px;
     color: #caa648;
     margin: 0;
-    font-weight: 500;
     line-height: 1;
 }
 
@@ -662,7 +647,6 @@ button span{
     margin: 0;
     color: #111111;
     font-size: 14px;
-    font-weight: 500;
 }
 
 .shop-now-btn {
@@ -764,7 +748,6 @@ button span{
 .feature-banner h3 {
     color: #322D2D;
     font-size: 24px;
-    font-weight: 500;
     line-height: 33px;
     text-align: center;
     margin: 0;
@@ -1076,7 +1059,6 @@ button span{
 
 .guarantees h3 {
     font-size: 18px;
-    font-weight: 500;
     color: #caa648;
     padding-right: 60px;
     white-space: nowrap;
@@ -1112,7 +1094,6 @@ button span{
 
 .guarantee-text h4 {
     font-size: 16px;
-    font-weight: 500;
     color: #222;
     margin-bottom: 5px;
 }
@@ -1226,7 +1207,6 @@ button span{
 
 .as-seen-title {
     font-size: 18px;
-    font-weight: 600;
     color: #333;
     margin-right: 40px;
 }
@@ -1730,7 +1710,6 @@ button span{
 
 .product-header h2 {
     font-size: 28px;
-    font-weight: 500;
     color: #322d2d;
     margin-bottom: 5px;
 }
@@ -1784,7 +1763,6 @@ button span{
 
 .flavor-selection h3 {
     font-size: 16px;
-    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -2043,7 +2021,6 @@ button span{
     font-size: 16px;
     color: #444;
     margin-bottom: 20px;
-    font-weight: 500;
 }
 
 .included-content {
@@ -2083,8 +2060,7 @@ button span{
 }
 
 .free-text {
-    color: #FF6B00;
-    font-weight: 600;
+    color:#D0AF80;
 }
 
 .multiple-items {
@@ -2128,7 +2104,6 @@ button span{
     position: absolute;
     left: 0;
     color: #322D2D;
-    font-weight: bold;
 }
 
 .highlight {
@@ -2247,7 +2222,6 @@ button span{
 
 .shilajit-header h2 {
     font-size: 48px;
-    font-weight: 400;
     line-height: 120%;
     margin-bottom: 16px;
     color: #322D2D;
@@ -2255,7 +2229,6 @@ button span{
 
 .subtitle {
     font-size: 14px;
-    font-weight: 400;
     line-height: 100%;
     letter-spacing: 3.03px;
     color: #322D2D;
@@ -2680,7 +2653,6 @@ button span{
 
 .subscription-tag {
     font-family: Oxanium;
-    font-weight: 400;
     font-size: 12.43px;
     line-height: 100%;
     letter-spacing: 3.14px;
@@ -2717,13 +2689,11 @@ button span{
     background: rgba(255, 255, 255, 0.8);
     border-radius: 100px;
     font-size: 14px;
-    font-weight: 500;
     color: #000000;
 }
 
 .subscribe-now-btn {
     padding: 16px 32px;
-    font-weight: 500;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -3236,7 +3206,6 @@ button span{
 
 .comparison-title {
     font-size: 36px;
-    font-weight: 500;
     color: #322d2d;
     text-align: center;
     margin-bottom: 50px;
@@ -3294,8 +3263,8 @@ button span{
 
 .benefit-header {
     text-align: left;
-    font-weight: 600;
-    color: #333;
+    font-weight: 700;
+    color: #322D2D;
 }
 
 .comparison-table tbody tr:nth-child(even) {
@@ -3314,6 +3283,7 @@ button span{
     line-height: 19.16px;
     letter-spacing: 0px;
     background-color: white;
+    color:#666666 ;
 }
 
 .comparison-table tbody td:not(:first-child) {
@@ -3522,18 +3492,14 @@ button span{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
     background: #DEA453;
     backdrop-filter: blur(3px);
-    border: none;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
     z-index: 2;
 }
 
@@ -4012,7 +3978,6 @@ button span{
     color: #322d2d;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
     transition: all 0.3s ease;
     
 }
@@ -4142,7 +4107,6 @@ button span{
 
 .newsletter-title {
     font-size: 42px;
-    font-weight: 500;
     color: #ffffff;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -4401,15 +4365,12 @@ button span{
     color: #DEA453;
     border: none;
     font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
     border-radius: 4px;
     white-space: nowrap;
 }
 
 .footer-subscribe-btn:hover {
-    background-color: #c4a030;
+    background-color: #d3cfcf;
 }
 
 .privacy-note {
