@@ -1,4 +1,6 @@
-// Wait for DOM to be fully loaded
+document.querySelectorAll("img").forEach((img) => {
+  console.log(img.src, img.loading);
+});
 document.addEventListener("DOMContentLoaded", function () {
   // Search functionality
   const searchIcon = document.querySelector(".search-icon");

@@ -11,10 +11,21 @@
     font-family: 'New Rail Alphabet', sans-serif;
     font-weight: 300;
 }
+button{
+    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+    color: #000000;
+    line-height: 16.18px;
+    border-radius: 505.64px;
+    border: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button span{
+    padding-left: 20px;
+}
 
 /* Header Styles */
 .header {
-    /* position: sticky; */
     top: 0;
     z-index: 100;
     background-color: #fff;
@@ -102,15 +113,9 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
-    color: #111111;
     border: none;
     padding: 10px 20px;
-    border-radius: 25px;
     font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .try-alcami-btn:hover {
@@ -129,6 +134,8 @@
     height: 20px;
     position: relative;
     z-index: 1000;
+    background: linear-gradient(180deg, rgba(243, 243, 243, 0.75) 0%, rgba(184, 184, 184, 0.8) 59.38%, rgba(243, 243, 243, 0.25) 100%);
+
 }
 
 .hamburger-menu span {
@@ -256,7 +263,6 @@
     color: #fff;
     border: none;
     padding: 12px 25px;
-    border-radius: 25px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -399,14 +405,8 @@
     align-items: center;
     gap: 12px;
     padding: 16px 32px;
-    border-radius: 100px;
-    border: none;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 500;
-    color: #FFFFFF;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
-    transition: all 0.3s ease;
 }
 
 .shop-now-btn:hover {
@@ -669,26 +669,13 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
-    color: #111111;
-    border: none;
     padding: 16px 32px;
-    border-radius: 30px;
     font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .shop-now-btn:hover {
     opacity: 0.9;
     transform: translateY(-1px);
-}
-
-.shop-now-btn svg {
-    width: 24px;
-    height: 24px;
-    stroke: currentColor;
 }
 
 .product-img {
@@ -927,21 +914,13 @@
 
 .view-ingredients-btn {
     width: 307.241455078125px;
-    border-radius: 505.64px;
-    border: none;
-    border-bottom-width: 1.01px;
     padding: 12.14px 24.27px;
-    background: linear-gradient(92.57deg, #CAA648 -34.45%, #CAA648 -12.71%, #D5B147 4.32%, #E4C267 36.63%, #E2C065 85.1%, #DBB95E 102.87%, #D0AE52 114.18%, #C09F41 119.07%, #BB9A3C 127.1%);
-    font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    transition: all 0.3s ease;
-    color: #322D2D;
 }
 
 .view-ingredients-btn-icon {
@@ -1434,8 +1413,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .nav-button:hover {
@@ -1571,20 +1548,6 @@
     align-items: center;
     padding: 0 40px;
     z-index: 10;
-}
-
-.nav-button {
-    background: none;
-    border: 1px solid #E5E7EB;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: white;
 }
 
 .nav-button.disabled {
@@ -2177,8 +2140,6 @@
     width: 100%;
     height: 41.27px;
     background: #667744;
-    border-radius: 505.64px;
-    border: none;
     border-bottom-width: 1.01px;
     padding-top: 12.14px;
     padding-right: 24.27px;
@@ -2190,7 +2151,6 @@
     align-items: center;
     gap: 10px;
     font-size: 18.2px;
-    line-height: 16.18px;
     letter-spacing: 0;
     color: #FFFFFF;
     margin-top: 20px;
@@ -2402,12 +2362,7 @@
     gap: 30px;
     padding: 12.14px 24.27px;
     background: #E2C065;
-    border: none;
-    border-radius: 505.64px;
     font-size: 18.2px;
-    color: #000000;
-    cursor: pointer;
-    transition: all 0.3s ease;
     width: auto;
     min-width: 200px;
 }
@@ -2768,11 +2723,6 @@
 
 .subscribe-now-btn {
     padding: 16px 32px;
-    background: #D4AF37;
-    border-radius: 100px;
-    border: none;
-    color: #FFFFFF;
-    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     display: flex;
@@ -2965,14 +2915,9 @@
     align-items: center;
     gap: 15px;
     padding: 12.14px 24.27px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
     color: #333;
     font-size: 20px;
-    border: none;
-    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    line-height: 16.18px;
     letter-spacing: 0px;
 }
 
@@ -3436,17 +3381,12 @@
 }
 
 .risk-free-btn {
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
-    color: #000000;
     font-size: 20px;
-    line-height: 16.18px;
     letter-spacing: 0px;
     padding: 16px 32px;
-    border-radius: 100px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    transition: all 0.3s ease;
 }
 
 .risk-free-btn .btn-arrow {
@@ -3589,7 +3529,6 @@
     width: 70px;
     height: 70px;
     background: #DEA453;
-
     backdrop-filter: blur(3px);
     border: none;
     border-radius: 50%;
@@ -3657,21 +3596,16 @@
     align-items: center;
     gap: 15px;
     padding: 12px 30px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
-    color: #000000;
     font-family: Oxanium;
     font-size: 18.2px;
     letter-spacing: 0px;
     text-decoration: none;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     align-self: flex-start;
     width: fit-content;
 }
 
 .about-us-btn:hover {
     background-color: #c8a64a;
-    transform: translateY(-2px);
 }
 
 /* Responsive Styles for Founders Section */
@@ -4001,18 +3935,10 @@
     display: inline-flex;
     align-items: center;
     padding: 16px 32px;
-    background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
-    color: #fff;
-    border-radius: 100px;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    color:#000000;
 }
-.get-in-touch-btn span{
-    padding-left: 20px;
-} 
+
 .get-in-touch-btn:hover {
     background-color: #b39a64;
     transform: translateY(-2px);
@@ -4186,7 +4112,6 @@
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
-
     background-image: url('../assets/coffer.jpeg');
     background-size: cover;
     background-position: center;
@@ -4264,14 +4189,7 @@
     justify-content: center;
     gap: 10px;
     padding: 14px 45px;
-    background-color: #ffffff;
-    color: #333;
     font-size: 16px;
-    font-weight: 500;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
     margin-top: 10px;
 }
 
@@ -4482,7 +4400,7 @@
 
 .footer-subscribe-btn {
     padding: 15px 25px;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     color: #DEA453;
     border: none;
     font-size: 16px;
@@ -4973,10 +4891,6 @@
     border: 1px solid #000;
     background-color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .product-navigation .nav-button .arrow-icon {
